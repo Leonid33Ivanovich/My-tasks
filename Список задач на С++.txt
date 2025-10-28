@@ -1,0 +1,4987 @@
+Задача 1 Перевірка часу доби:* Напишіть програму, яка приймає годину (від 0 до 23) 
+і виводить "Доброго ранку", "Доброго дня", "Доброго вечора" або "Добраніч" в залежності від часу.*/
+double era;
+cout<<"введіть час"<<endl;
+cin>>era;
+if (era>=0.00 && era<=6.00){
+    cout<<"Добраніч"<<endl;
+}
+else if (era>6.00 && era<=12.00){
+    cout<<"Доброго ранку"<<endl;
+}
+else if (era>12.00 && era<=18.00){
+    cout<<"Доброго дня"<<endl;
+}
+else if (era>18.00 && era<=0.00){
+    cout<<"Доброго дня"<<endl;
+}
+
+Задача 2 Визначення віку:* Напишіть програму, яка приймає вік людини і виводить, чи є ця людина дитиною 
+(до 12 років), підлітком (від 13 до 17), дорослим (від 18 до 64) або пенсіонером (65 і більше).*/
+float people;
+cout <<"Введіть вік людини"<< endl;
+cin >>people;
+if(people>0.1 && people<=12){
+    cout <<"Дитина"<< endl;
+}
+else if(people>13 && people<=17){
+    cout <<"Підліток"<< endl;
+}
+else if(people>18 && people<=64){
+    cout <<"Доросла"<< endl;
+}
+else if(people>=65 ){
+    cout <<"Пенсіонер"<< endl;
+}
+
+Задача 3 Класифікація оцінок:* Напишіть програму, яка приймає бал (від 0 до 100) 
+і виводить "незадовільно", "задовільно", "добре" або "відмінно" в залежності
+від бала.*/
+int rating;
+cout <<"Введіть кількість балів"<<endl;
+cin >>rating;
+if(rating>35 && rating<=59) {
+  cout <<"незадовільно"<<endl;  
+}
+else if (rating>=60 && rating<=74) {
+  cout <<"задовільно"<<endl;  
+}
+else if (rating >=75 && rating<=89) {
+  cout <<"добре"<<endl;  
+}
+else if (rating >=90 && rating<=100) {
+  cout <<"відмінно"<<endl;  
+}
+Задача 4 Розрахунок знижки:* Напишіть програму, яка розраховує знижку в магазині.
+Якщо сума покупки менше 1000, знижка 5%, якщо від 1000 до 5000 - 10%, 
+і якщо більше 5000 - 15%.*/
+int sum ;
+cout<<"Введіть сумму покупок"<<endl;
+cin>>sum;
+if(sum<=1000){
+    cout<<"Сумма з 5% знижки складає: "<<sum*5/100<<" гривень"<<endl;
+}
+else if(sum>1000 && sum<=5000 ){
+    cout<<"Сумма з 10% знижки складає: "<<sum*10/100<<" гривень"<<endl;
+}
+else if(sum>=5000  ){
+    cout<<"Сумма з 15% знижки складає: "<<sum*15/100<<" гривень"<<endl;
+}
+
+Задача 5 /*Розпізнавання символів:* Напишіть програму, яка читає один символ і визначає, 
+чи є це цифра, велика літера, маленька літера або інший символ.*/
+
+
+// char a;
+// cout<< "Введіть сиввол або число"<<endl;
+// cin>>a;
+// if(a >= 65 && a <= 90) {
+//   cout<< "Велика літера"<<endl; 
+// }
+// else if (a>=97 && a<=122) {
+//     cout<< "Маленька літера"<<endl;
+// }
+// else if (a>=48 && a<=57) {
+//     cout<< "цифра"<<endl;
+// }
+Задача 6 *Обчислення квадратного кореня:* Напишіть програму, яка приймає число і 
+обчислює його квадратний корінь, якщо число позитивне, або виводить помилку, 
+якщо число негативне.
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+
+https://www.w3schools.com/cpp/cpp_math.asp*/
+int x;
+cout<<"введіть число"<<endl;
+cin>>x;
+if(x>0){
+    cout<<sqrt (x)<<endl;
+       }
+ else if(x<0){
+    cout<<"Помилка"<<endl;
+             }
+
+}
+
+ Задача 7 Визначення пори року:* Напишіть програму, яка приймає номер місяця 
+   і виводить пору року (зима, весна, літо, осінь).
+
+    int month;
+    cout<<"Введіть номер місяця"<<endl;
+    cin>>month;
+    if(month<1 && month<=2) {
+        cout<<"Зимова пора року"<<endl;
+    }
+   else if(month>3 && month<=6) {
+        cout<<"Весняна пора року"<<endl;
+    } 
+    else if(month>6 && month<=9) {
+        cout<<"Літня пора року"<<endl;
+    } 
+else if(month>9 && month<=11) {
+        cout<<"Осіння пора року"<<endl;
+    } 
+    else if(month=12){
+        cout<<"Зимова пора року"<<endl;
+    }
+
+ Задача 8 Обчислення квадратного кореня:* Напишіть програму, яка приймає число і обчислює його квадратний корінь, 
+якщо число позитивне, або виводить помилку, якщо число негативне.
+int a;
+  cout << "Введіть число" << endl;
+  cin >> a;
+  if(a==0){
+      cout << 0 << endl;
+  }
+  else if (a == 1)
+    {
+      cout << 1 << endl;
+    }
+  else if (a == 4)
+    {
+      cout << 2 << endl;
+    }
+  else if (a == 9)
+    {
+      cout << 3 << endl;
+    }
+  else if (a == 16)
+    {
+      cout << 4 << endl;
+    }
+  else if (a == 25)
+    {
+      cout << 5 << endl;
+    }
+  else if (a == 36)
+    {
+      cout << 6 << endl;
+    }
+  else if (a == 49)
+    {
+      cout << 7 << endl;
+    }
+
+     else if (a<-0)
+    {
+      cout << "Помилка" << endl;
+    }
+Задача 9 Розрахунок податків:* Напишіть програму, яка розраховує податок з доходу 
+залежно від його розміру: до 10,000 податок 10%, від 10,001 до 20,000 - 15%, 
+і більше 20,000 - 20%.
+
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+int y;
+cout<<"Введіть розмі Вашого доходу"<<endl;
+cin>>y;
+if(y<=10000 ){
+    cout<<(y*10/100)<<endl;
+             }
+else if(y>10001 && y<=20000){
+    cout<<(y*15/100)<<endl;
+}             
+else if(y>20000){
+    cout<<(y*20/100)<<endl;
+}             
+Задача 10 Класифікація трикутників:* Напишіть програму, яка приймає довжини трьох 
+сторін трикутника і визначає, чи є трикутник рівностороннім, рівнобедреним або 
+різностороннім.
+Різносторонній трикутник - всі три сторони не рівні.
+Рівнобедрений трикутник - дві сторони рівні.
+Рівносторонній трикутник або правильний трикутник - всі три сторони рівні.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int b=5;
+int c=10;
+int a;
+cout<<"Введіть значення щоб визначити трикутник"<<endl;
+cin>>a;
+if(a==b){
+   cout<<"Рівнобедрений трикутник"<<endl; 
+}
+else if(a==a&&a==c){
+   cout<<"Рівносторонній трикутник"<<endl; 
+}
+else {
+   cout<<"Різносторонній трикутник"<<endl; 
+}
+
+
+}
+
+}
+
+Задача 11 Розрахунок вартості дзвінка:* Напишіть програму, яка обчислює вартість 
+телефонного дзвінка залежно від тривалості та часу доби. Денні тарифи вище ніж 
+нічні.
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+double day = 1.50;
+double night =0.90;n
+
+int main()
+{
+    srand(time(NULL));
+int balance = 5000;
+        int number0;
+        int number1;
+        int number2;
+    while ( balance >= 100 ) {
+        if (balance <= 0) {
+            cout<<"Програш! недостатньо коштів"<<endl;
+           break;
+        } 
+        char player;
+        cout << "Хочете покрутити барабан? (Y - так, n - ні): ";
+        cin >> player;
+        if  (player == 'n') {
+            cout<<"Кінець гри"<<endl;
+            break;
+        }   
+          if (player == 'Y') {
+            balance -= 100;
+            int number0 = 0 + rand() % 7;
+            int number1 = 0 + rand() % 7;;
+            int number2 = 0 + rand() % 7;
+            cout << number0 << number1 << number2 << endl;
+        }
+          if (number0==0&&number1==0&&number2==0) {
+            cout<<" Ви виграли 300 кредитів"<<endl;
+            balance+=300;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }         
+         if (number0==1&&number1==1&&number2==1) {
+            cout<<" Ви виграли 300 кредитів "<<endl;
+            balance+=300;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }        
+       if (number0==2&&number1==2&&number2==2) {
+            cout<<" Ви виграли 300 крелитів "<<endl;
+            balance+=300;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }         
+         if (number0==3&&number1==3&&number2==3) {
+            cout<<" Ви виграли 300 кредитів "<<endl;
+            balance+=300;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }         
+         if (number0==4&&number1==4&&number2==4) {
+            cout<<" Ви виграли 300 кредитів "<<endl;
+            balance+=300;
+           cout <<"Ваш баланс = "<< balance<<endl;           
+        }         
+         if (number0==5&&number1==8&&number2==9) {
+            cout<<" Ви виграли 200 кредитів "<<endl;
+            balance+=200;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }         
+         if (number0==5&&number1==5&&number2==7) {
+            cout<<" Ви виграли 200 кредитів "<<endl;
+            balance+=200;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }         
+         if (number0==5&&number1==5&&number2==5) {
+            cout<<" Ви виграли 300 кредитів"<<endl;
+            balance+=300;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }         
+         if (number0==7&&number1==5&&number2==7) {
+            cout<<" Ви виграли 200 кредитів"<<endl;
+            balance+=200;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }         
+         if (number0==7&&number1==7&&number2==7) {
+            cout<<"! ДЖЕК-ПОТ 10000 !"<<endl;
+            balance+=10000;
+            cout <<"Ваш баланс = "<< balance<<endl;            
+        }        
+        if (number0==7&&number1==7&&number2==1) {
+            cout<<" Ви виграли 200 кредитів"<<endl;
+            balance+=200;
+             cout <<"Ваш баланс = "<< balance<<endl;             
+        }         
+         if (number0==7&&number1==7&&number2==9) {
+            cout<<" Ви виграли 200 кредитів"<<endl;
+            balance+=200;
+             cout <<"Ваш баланс = "<< balance<<endl;           
+        } 
+         if (number0==6&&number1==6&&number2==6) {
+            cout<<"Штраф -1000 кредитів"<<endl;
+            balance-=1000;
+             cout<<"Bаш баланс : " <<balance<< " кредитів;"<<endl;
+        }   
+   }
+    return 0;
+}
+
+Задача 12 Дано масив розмірністю M, заповнений випадковими числами з діапазону від 0 до 20. 
+Визначити суму елементів масиву, середнє арифметичне, мінімальний і максимальний елемент.
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+   (     int a = 1232;
+
+int mathematicalActions[20];
+    int sum= 0;
+    
+    for(int  i = 0; i < 20; i++ )
+        {
+        mathematicalActions[i]=0+rand()%(20+0); 
+        sum = sum += mathematicalActions[i];
+        }
+         cout<<"Сума = "<<sum<<endl;
+    
+    cout << "------------" << endl;
+    
+    int  average;
+    
+    for(int  i = 0; i < 20; i++ )
+        {
+        mathematicalActions[i]=0+rand()%(20+0); 
+        average=sum/20;
+        }
+         cout<<"Середнє арифметичне = "<<average<<endl;
+
+    cout << "-------------------------" << endl;
+
+    int max = mathematicalActions[20]; 
+    for (int i = 0; i < 20; i++)
+        {
+            if  (mathematicalActions[i] > max) 
+                {
+                 max =  mathematicalActions[i];
+                }
+        }               
+        cout << "Максимальний елемент: " << max << endl;
+    
+    cout << "-------------------------" << endl;
+    
+    int min =  mathematicalActions[20];
+    for (int i = 0; i < 20; i++)
+        {
+            if (mathematicalActions[i] < min) 
+                {
+                 min =  mathematicalActions[i];
+                }
+        }
+        cout << "Міннімальний елемент : " << min << endl;
+    
+    cout << "-------------------------" << endl;
+    
+    return 0;
+}
+
+Задача 13 Система оцінювання зі змінною вагою:Напишіть програму, яка розраховує 
+кінцеву оцінку студента, враховуючи різні ваги різних видів робіт (наприклад, 
+тести - 40%, домашні завдання - 30%, проекти - 30%).
+    
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int test=40;
+    int homework=30;
+    int project=30;
+    cout<<"Введіть вагу виконаної роботи"<<endl;
+    int n;
+    cin>>n;
+    if(n==40){
+      cout<<n*100/100<<" Оцінка (F)"<<endl;
+    }
+    else if(n==40+30){
+        cout<<n*100/100<<" Оцінка (D)"<<endl;
+    }
+    else if(n==40+30+30){
+        cout<<n*100/100<<" Оцінка (E)"<<endl;
+    }
+
+ return 0 ;
+}
+Задача 14 Дано масив розмірністю M, заповнений випадковими числами з діапазону  від 0 до 20. Визначити суму елементів 
+масиву, середнє арифметичне, мінімальний і максимальний елемент.
+
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    srand(time(NULL));
+
+ int mathematicalActions[20];
+    int sum = 0;
+    
+    for(int  i = 0; i < 20; i++ )
+    {
+        mathematicalActions[i] = 0+rand()%(20+0); 
+        sum = sum + mathematicalActions[i];
+    }
+    cout<<"Сума = "<<sum<<endl;
+    
+    cout << "------------" << endl;
+    
+    cout<<"Середнє арифметичне = "<< sum / 20<<endl;
+
+    cout << "-------------------------" << endl;
+
+    int max = mathematicalActions[0]; 
+    for (int i = 0; i < 20; i++)
+        {
+            if  (mathematicalActions[i] > max) 
+                {
+                 max =  mathematicalActions[i];
+                }
+        }               
+    cout << "Максимальний елемент: " << max << endl;
+    
+    cout << "-------------------------" << endl;
+    
+    int min =  mathematicalActions[19];
+    for (int i = 0; i < 20; i++)
+        {
+            if (mathematicalActions[i] < min) 
+                {
+                 min =  mathematicalActions[i];
+                }
+        }
+    cout << "Міннімальний елемент : " << min << endl;
+    
+    cout << "-------------------------" << endl;
+    
+    return 0;
+}
+                                                                                 ФУНКЦІЇ
+Задача 15 *Задача на перетворення рядка у зворотному порядку*
+   Розробіть функцію, яка приймає рядок і повертає новий рядок, де символи вихідного рядка розташовані у зворотному порядку. 
+   Використовуйте для цього рекурсію    
+#include <iostream>
+using namespace std
+
+string stringS(string str,int i = 0) //str: Рядок, який потрібно перевернути.
+{                                    //i: поточний індекс, який починається з 0 і збільшується при кожному рекурсивному виклику. 
+//1 Визначаємо довжину рядка   
+    int len = str.length();
+//2 Базовий випадок вихід з рекурсивного алгоритму 
+    if(i >= len/2) //Якщо поточний індекс i більший або рівний половині довжини рядка.
+    return str; //  функція завершує виконання і повертає перевернутий рядок. Це означає, що всі символи обміняні місцями і рядок повністю   перевернутий. 
+//3  Обмін символами   
+    swap(str[i],str[len - i - 1]); //Обмінюємо символи на поточній позиції i і симетрично відносно центру рядка len - i - 1.
+//4 Рекурсивний виклик    
+  return stringS( str,i + 1);// збільшуючи індекс i на 1, щоб перейти до наступної пари символів для обміну.
+}
+int main()
+{
+ string st = "hello";
+   cout <<  stringS(st) << endl;
+/*
+Пояснення
+Розглянемо приклад роботи функції для рядка "Hello":
+
+Перший виклик:
+
+i = 0
+str = "Hello"
+Обмінюємо str[0] і str[4]: "oellH"
+Рекурсивний виклик stringS("oellH", 1)
+Другий виклик:
+
+i = 1
+str = "oellH"
+Обмінюємо str[1] і str[3]: "olleH"
+Рекурсивний виклик stringS("olleH", 2)
+Третій виклик:
+
+i = 2
+str = "olleH"
+Оскільки i >= len / 2, функція завершується і повертає "olleH"
+Функція завершується і повертає перевернутий рядок "olleH".
+
+*/
+
+
+   return 0;
+}
+
+ Задача 15a Створити функцію котра ВИВОДИТь числа від 1 до 100.
+#include <iostream>
+
+using namespace std;
+ void numbers();
+
+
+int main()
+{
+  numbers();
+    return 0;
+}
+void numbers(){
+        for(int i=1; i<101; i++){
+            cout<<i<<endl;
+        }
+    }
+Задача 16 Створити функцію котра ПОВЕРТАЄ суму чисел від 1 до 10.
+#include <iostream>
+
+using namespace std;
+int sum();
+
+int main()
+{
+sum();
+ return 0;
+}
+ int sum(){
+    int a=0;
+      cout<<"Сума чисел від 1 до 10 :"<<endl;
+     for(int j=1; j<11;j++){
+        int a=а+j;
+     }
+   return a;
+}
+
+
+Задача 17
+#include <iostream>
+using namespace std;
+//Створити функцію, яка обчислює факторіал числа. Факторіал числа n визначається 
+//як 1 * 2 * ... * n.
+int factorial(int n){
+    int f=1;
+    for(int i=1;i<=n;i++){
+      f=f*i;  
+    }
+    return f;
+}
+
+int main()
+{
+cout<<factorial(5)<<endl;
+return 0;
+}
+
+Задача 18
+#include <iostream>
+using namespace std;
+/*Написати функцію, яка приймає ціле число та повертає true, якщо воно парне, 
+і false, якщо непарне.
+*/
+bool evenNumber(int g){
+    if(g%2==0){
+        return true;
+    }else{
+    return false;
+    }
+   return g; 
+}
+int main()
+{
+ cout<<evenNumber(4)<<endl;
+return 0;
+}
+
+
+Задача 19
+#include <iostream>
+using namespace std;
+/*Реалізувати функцію, яка приймає три цілих числа і повертає найбільше з них.*/
+int number(int a,int b,int c){
+    if(a>b&&a>b&&a>c)
+    return a;
+    else if(b>a&&b>c)
+    return b;
+   return c;
+}
+int main()
+{
+ cout<<number(1,53,60)<<endl;
+ return 0;
+}
+Задача 20
+#include <iostream>
+using namespace std;
+/*Створити функцію, яка приймає ціле число n і виводить "Hello World" n разів.*/
+void integer(int m){
+    if(m%2==0){
+        for(int i=0;i<m;i++){
+            cout<<"Hello World"<<endl;
+        }
+    }
+}
+int main()
+{
+integer(4);
+return 0;
+}
+Задача 21 Створити функцію котра ПОВЕРТАЄ результат зведення числа A в степінь B
+#include <iostream>
+using namespace std;
+  int power(int a, int b){
+      int y=1;
+      for(int i=0; i < b;i++){
+      y*=a;
+      }
+      return y;
+  }
+  Задача 22 /*Написати функцію для додавання двох чисел: Створіть функцію, яка приймає 
+ два цілих числа як параметри і повертає їхню суму.
+*/ 
+int sum(int a,int b){
+    return a+b;
+    
+}
+int main()
+{
+    cout<<sum(5,2) <<endl;
+   
+    return 0;
+}
+Задача 23 /*Функція для перевірки парності числа: Реалізуйте функцію, яка приймає ціле 
+число і повертає true, якщо число парне, і false, якщо непарне.*/
+#include <iostream>
+using namespace std;
+bool number (int c){
+    
+    if(c%2==0){
+        return true;
+    }else
+    return false;
+}
+int main()
+{
+std::cout << number(3) << std::endl;
+return 0;
+}
+Задача 24 /*Функція для обчислення факторіалу числа: Напишіть функцію, яка приймає ціле
+число і повертає його факторіал.
+*/
+#include <iostream>
+using namespace std;
+
+int factorial(int y){
+    int b = 1;
+    for(int i=1;i<=y;i++){
+     b*=i;   
+    }
+    return b;
+}
+int main()
+{
+std::cout <<factorial(5)<< std::endl;
+return 0;
+}
+Задача 25 /*Функція для знаходження максимального з двох чисел: Створіть функцію, яка
+приймає два числа і повертає більше з них.*/
+
+#include <iostream>
+using namespace std;
+int maxNumber(int number1,int number2){
+    int max;
+    if (number1>number2){
+        return number1;
+    }else{
+        return number2;
+    }
+}
+int main()
+{
+std::cout <<maxNumber(5,10)<< std::endl;
+return 0;
+}
+Задача 26 /*Функція для друку "Hello, World!": Реалізуйте функцію, яка не приймає 
+параметрів і просто друкує "Hello, World!".*/
+
+#include <iostream>
+using namespace std;
+void line(){
+cout<<"Hello, World!"<<endl;
+}
+int main()
+{
+line();
+return 0;
+}
+Задача 27 /*Функція для виведення чисел від 1 до N: Напишіть функцію, яка приймає 
+ціле число N і виводить усі цілі числа від 1 до N.*/
+
+#include <iostream>
+using namespace std;
+void numbers(int n){
+    
+    for(int i=0;i<n+1;i++){
+       cout<<i<<endl; 
+    }
+}
+int main()
+{
+numbers(10);
+ return 0;
+}
+Задача 28 /*Функція для виведення таблиці множення числа: Реалізуйте функцію, яка
+приймає число N і виводить таблицю множення для цього числа.*/
+
+#include <iostream>
+using namespace std;
+void multiplication(int number)
+   {
+
+    for(int j=0;j<=9;j++)
+       {
+        cout<<number*j<<endl;
+       }
+   }
+int main()
+{
+multiplication(2);
+return 0;
+}
+Задача 29 /*Функція для знаходження максимального елемента в масиві: Напишіть функцію, 
+яка приймає масив цілих чисел та його розмір, і повертає максимальне число 
+в масиві.*/
+
+#include <iostream>
+using namespace std;
+int maxElement(int array[],int size)
+{
+  int maxValue=0;
+  for(int i=0; i<size; i++)
+     {
+     if(array[i]>maxValue)
+       {
+       maxValue = array[i]; 
+       }
+     }
+return maxValue;
+}
+int main()
+{
+int array[]={50,25,35,45,95,100};
+cout <<maxElement(array,6)<<endl;
+return 0;
+}
+Задача 30 /*Функція для обчислення суми елементів масиву: Створіть функцію, яка приймає 
+масив цілих чисел та його розмір, і повертає суму всіх елементів масиву.*/
+
+#include <iostream>
+using namespace std;
+int sumСalculation(int array[],int size)
+{
+int sum=0;
+  for(int i=0; i<size; i++)
+     {
+     sum = sum+array[i]; 
+     }
+return sum;
+}
+int main()
+{
+int array[]={50,25,35,45,95,100};
+cout<<sumСalculation(array,6)<<endl;
+return 0;
+}
+Задача 31 /*Функція для перевірки, чи містить масив певне число: Реалізуйте функцію, 
+яка приймає масив цілих чисел, його розмір та число для пошуку, і повертає 
+true, якщо це число є в масиві, та false - якщо ні.*/
+
+#include <iostream>
+using namespace std;
+bool findthevalue(int array[],int size,int number)
+{
+
+  for(int i=0; i<size; i++)
+     {
+    if(number==array[i])
+      {
+      return true;
+      }else{
+            return false;
+           }
+     }
+return number;
+int main()
+{
+int array[]={50,25,35,45,95,100};
+cout<<findthevalue(array,6,200)<<endl;
+
+  return 0;
+}
+Задача 32  Напишіть функцію, яка приймає структуру Car і виводить
+марку та рік випуску автомобіля.
+
+
+
+#include <iostream>
+
+using namespace std;
+struct Car
+{
+    string make="Opel";
+    int year=1985;
+    int mileage =100;
+};
+void carsdata(Car data)
+{
+    cout<<"Марка авто: \n"<<  data.make<<endl;
+    cout<<"Рік випуску авто: \n" << data.year<<endl;
+    cout<<"Пробіг авто,тис.км: \n" << data.mileage<<endl;
+}
+
+int main()
+{
+ Car data;
+   carsdata(data);
+return 0;
+}
+Задача 33 Автоматичний Вибір Типу: Створіть змінну з ключовим словом auto, присвоївши 
+їй ціле число. Виведіть тип цієї змінної.
+#include <iostream>
+using namespace std;
+int main()
+{
+auto y = 5.2;
+cout<<"Розмір значення зміної у :\n"<<sizeof(y)<<endl;
+ return 0;
+}
+Задача 34 Напишіть функцію, яка повертає float, і використовуйте auto 
+ для створення змінної, що зберігає результат цієї функції.
+#include <iostream>
+using namespace std;
+float valueFloat()
+{
+    return 5.2+15.0f;
+}
+
+int main()
+{
+auto result=valueFloat();
+ cout<<"Результат виразу функції valueFloat()\n"<<result<<"\n";
+ cout<<"Розмір результата 20.2 доівнює: \n"<<sizeof(result)<<" байта"<<endl;
+  return 0;
+}
+
+Задача 
+    /*
+    1. *Задача на розрахунок коренів квадратного рівняння*
+   Напишіть функцію, яка приймає коефіцієнти a, b, і c квадратного рівняння \( ax^2 + bx + c = 0 \) 
+   та повертає реальні корені (якщо вони існують). Функція повинна вирішувати дискримінант і, в залежності 
+   від його значення, визначати тип коренів (два різні, один подвійний, корені відсутні).
+   rootСalculation (double a, double b, double c)
+    */
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+//Задача на розрахунок коренів квадратного рівняння
+double rootСalculation (double a, double b, double c)
+{
+double double_root;
+double equation;
+double equation1;
+    if(a==0)
+    exit(-1); // ця функція викликається, програма негайно припиняє виконання, приймає один аргумент, який називається кодом виходу (або статусом виходу).
+    double discriminant = pow (b, 2) - 4 * a * c;
+    if (discriminant > 0) // рівняння має два різні дійсні корені
+        {
+        cout << " різні корені" << endl;
+        equation  = (-b + sqrt(discriminant)) / (2 * a);
+        cout << "Результат рішення першого рівнння = " << equation << endl;
+        equation1 = (-b - sqrt(discriminant)) / (2 * a);
+        cout << "Результат рішення першого рівнння = " << equation1 << endl;
+        }
+    else if (discriminant == 0) // рівняння має один подвійний (повторний) дійсний корінь
+    {
+        cout << " один корінь " << endl;
+        double_root = equation = equation1 = -b / (2 * a);
+        cout << "Результат рішення  рівнння = " << double_root << endl;
+    }
+    else if (discriminant < 0) // рівняння не має дійсних коренів
+        cout << "корені відсутні" << endl;
+    cout << "Результата обрахунку дискримінанта = " << " ";    
+return  discriminant;
+} 
+int main() 
+{
+cout << rootСalculation (5.0, 5.0, -10.0) << endl;
+return 0;
+}
+
+Задача
+/*. *Задача на перетворення рядка у зворотному порядку*
+   Розробіть функцію, яка приймає рядок і повертає новий рядок, де символи вихідного рядка розташовані у зворотному порядку. 
+   Використовуйте для цього рекурсію*/ 
+#include <iostream>
+#include <string>
+
+using namespace std;
+string stringS(string str) 
+ {
+    string reverse_string;
+   int  length = str.length();
+  for(int i = 0; i < length; ++i)
+    {
+    reverse_string+= str[length-i-1];   // Додаємо символ до x у зворотному порядку 
+    }
+    return reverse_string;
+ }
+int main() {
+ string st = "world";
+   cout << "Реверсний вивід заданого ряда : " << stringS(st) << endl;
+    return 0;
+}
+Задача 
+/*Задача на перевірку простого числа
+Напишіть функцію, яка перевіряє, чи є число простим. Функція повинна приймати одне ціле число та повертати true, якщо воно просте, 
+і false в іншому випадку.*/
+#include <iostream>
+#include <string>
+using namespace std;
+// Задача на перевірку простого числа
+bool prime_number(int number)
+{
+   int  divisor = 0;
+   for (int i = 1; i < number; ++i) 
+   {
+       if(number % i == 0 && number % number == 0)
+       {
+          divisor += i; 
+       }
+       if (divisor > 2)
+       return false;
+   }
+return true;
+}
+int main() 
+{
+cout << "" << prime_number(6) << endl;    
+   
+ return 0;
+}
+
+Задача 
+ /*4. *Задача: Таблиця множення*
+   - *Тема:* Цикли
+   - *Опис:* Напишіть програму, яка виводить таблицю множення для числа, введеного користувачем. Виведіть множення від 1 до 10.
+   - *Приклад вводу:* 3
+   - *Приклад виводу:*
+     
+     3 x 1 = 3
+     3 x 2 = 6
+     3 x 3 = 9
+     3 x 4 = 12
+     3 x 5 = 15
+     3 x 6 = 18
+     3 x 7 = 21
+     3 x 8 = 24
+     3 x 9 = 27
+     3 x 10 = 30
+     */
+#include <iostream>
+#include <string>
+using namespace std;
+//*4. *Задача: Таблиця множення*
+void multiplication_table(int number)
+{
+    int counter = 10;
+    int value = 0;
+    for(int i = 1; i <= counter; ++i)
+    {
+        value = i*number;
+        cout << number << " x " << i << " = " << value << endl;
+    }
+}
+int main() 
+{
+   multiplication_table(5); 
+
+return 0;
+}
+
+Задача
+   
+/*
+Задача на перетворення температури
+Розробіть функцію, яка конвертує температуру в градусах Цельсія в градуси Фаренгейта і навпаки. Функція повинна приймати значення температури і одиницю виміру (Ц або Ф) і повертати перетворену температуру.
+*/
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+
+//Задача на перетворення температури
+int temperature_conversion(double value, char measurement_units)
+{
+char c = 'C';
+char f = 'F';
+double conversion;
+if( measurement_units == 'C' )
+    {
+        conversion = (value * 9/5) + 32;
+        cout << f << " = ";
+    }
+    else if ( measurement_units == 'F')
+    {
+        cout << c << " = "; 
+        conversion = (value - 32) * 5/9;
+    }
+    else
+    cout << "Некоректний ввід одиниці вмірювання. Будь ласка, введіть 'C' або 'F'." <<endl;
+    
+return conversion;
+}
+int main() {
+
+cout << temperature_conversion(7,'C') << endl;
+
+ return 0;
+}
+
+Задача
+/*
+2. *Задача на перевірку симетричності числа*
+   Розробіть функцію, яка перевіряє, чи є число паліндромом (читається однаково з обох сторін). Функція повинна приймати ціле число як вхідний параметр і повертати булеве значення.
+   */
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+
+//Задача на перевірку симетричності числа
+
+  bool polindrome_number(int number)
+{    
+    string nArray = to_string(number); /*Тут перетворюється числове значення number в його строкове представлення і зберігає його в змінній nArray.Функція to_string зі стандартної бібліотеки C++ приймає числове значення будь-якого цілочисельного  або дійсного типу і повертає його строкове представлення. */
+    int lengthArray = nArray.length();
+    for (int i = 0; i < lengthArray  / 2; i++ ){
+    if (nArray[i] != nArray [ lengthArray - i - 1])
+        
+      return false;
+   
+    } 
+   return true;
+}
+int main() {
+ cout << polindrome_number(1333) << endl;
+
+return 0;
+}
+Задача
+/*
+3. *Задача на визначення найбільшого спільного дільника (НСД)*
+   Створіть функцію, яка знаходить НСД двох чисел за допомогою алгоритму Євкліда. Функція приймає два цілі числа і повертає їх НСД.*/
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+//*Задача на визначення найбільшого спільного дільника (НСД)*
+int Greatest_common_divisor(int a, int b) {
+    // Алгоритм Евкліда
+    while (b != 0) {
+        int temp = b;     /*зберігаємо поточне значення b у тимчасову змінну temp, щоб  зберегти це значення для наступного кроку.*/
+        
+        b = a % b;        /*обчислюємо залишок від ділення a на b і присвоюємо його змінній b. Це основний крок алгоритму Евкліда, 
+                          де  замінюємо b на залишок від ділення.*/
+                          
+        a = temp;         /*присвоюємо a значення, яке було збережено у змінній temp (старе значення b). Таким чином, ми пересуваємо                     значення b на позицію a для наступного кроку.*/
+    }
+    return a;
+}
+int main() {
+ cout << Greatest_common_divisor(48, 18) << endl;
+return 0;
+}
+Задача
+
+*6. *Задача на перевірку балансу дужок у виразі*
+   Створіть функцію, яка перевіряє, чи правильно розставлені дужки у математичному виразі (круглі `()`, квадратні `[]` та фігурні `{}`). Функція повинна приймати рядок, що містить вираз, і повертати `true`, якщо всі дужки правильно закриті та відповідають одна одній, і `false` у протилежному випадку.*/
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+//*Задача на перевірку балансу дужок у виразі*
+bool bracketBalance (string expression) //  expression приймає рядок який має вираз
+{
+    vector<char>symbol; // створюємо порожній вектор
+    for(char ch : expression) // перебераємо кожний символ  у виразі expression
+    {
+    // Обробка відкритих дужок:
+        if(ch == '{' || ch == '[' || ch == '(')
+        { 
+        symbol.push_back(ch); // додаємо дужку до вектора
+        }
+        // Обробка закритих дужок:    
+        else if(ch == '}' || ch == ']' || ch == ')')
+        {
+            if (symbol.empty()) //Метод empty() використовуєсть для перевірки того чи є цей   вектор порожнім  ( в нашій задачі це на наявність відповідної дужки)
+                return false; // якщо немає то виводемо false
+                
+                //Перевірка після обробки всіх символів
+                char openBracket = symbol.back();//зберігається останій символ рядка.метод back()  повертає посилання на останій символ
+                symbol.pop_back();  // Видаляємо верхню відкриту дужку з вектора
+                //перевірка, чи відповідає поточний символ закриваючій дужці, і якщо так, чи відповідає відкриваюча дужка для цієї закриваючої дужки. 
+                if ((ch == ')' && openBracket != '(') ||
+                (ch == '}' && openBracket != '{') ||
+                (ch == ']' && openBracket != '[')) 
+                // Якщо вектор не порожній, це означає, що залишилися незакриті відкриті дужки, і ми повертаємо false.
+                return false; 
+        }
+    }
+// Якщо вектор порожній після обробки всіх символів у виразі, це означає, що всі дужки збалансовані, і ми повертаємо true.
+return symbol.empty();    
+}
+
+int main() {
+
+string expression1 = "((a + b) * (c + d))";
+string expression2 = "(a + b) * (c + d]";   
+cout << "((a + b) * (c + d)) " << '=' << bracketBalance(expression1) << endl;   
+cout << "(a + b) * (c + d] " << '=' << bracketBalance(expression2) << endl; 
+return 0;
+}
+
+Задача
+/*Задача 4: Підрахунок кількості слів у файлі
+Завдання: Напишіть програму, яка читає текст з файлу і підраховує кількість слів у цьому тексті. Результат виводиться на екран.*/
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+int main() {
+
+// Відкриття файлу
+ifstream ifil("my fls.");
+
+string line;            // змінні для зберігання рядка з файлу 
+int wordCount = 0;      // лічильника слів.
+while (getline(ifil, line))  // читання рядків з файлу
+{
+//обробка кожого рядка
+    istringstream stream(line);   // створює потік stream, який можна використовувати для зчитування даних з рядка line.  
+    string word; // зберігаються слова  які зчиталися з потоку за  допомогою оператор ">>"  в цю змінну
+    while (stream >> word) // підрахунок слів у рядку (зчитує дані з потоку stream у змінну word. )
+    {
+            ++wordCount; // кожне витягнуте слово з потоку збільшує на один змінну лічильник
+    }
+}
+// закриття файлу
+    ifil.close();
+    std::cout << "Кількість слів у файлі: " << wordCount << std::endl;
+ return 0;
+}
+
+Задача
+/*. *Задача на перетворення рядка у зворотному порядку*
+   Розробіть функцію, яка приймає рядок і повертає новий рядок, де символи вихідного рядка розташовані у зворотному порядку. 
+   Використовуйте для цього рекурсію*/
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+//*Задача на перетворення рядка у зворотному порядку*
+string stringS(string str,int i = 0) //str: Рядок, який потрібно перевернути.
+{                                    //i: поточний індекс, який починається з 0 і збільшується при кожному рекурсивному виклику. 
+//1 Визначаємо довжину рядка   
+    int len = str.length();
+//2 Базовий випадок вихід з рекурсивного алгоритму 
+    if(i >= len/2) //Якщо поточний індекс i більший або рівний половині довжини рядка.
+    return str; //  функція завершує виконання і повертає перевернутий рядок. Це означає, що всі символи обміняні місцями і рядок повністю   перевернутий. 
+//3  Обмін символами   
+    swap(str[i],str[len - i - 1]); //Обмінюємо символи на поточній позиції i і симетрично відносно центру рядка len - i - 1.
+//4 Рекурсивний виклик    
+  return stringS( str,i + 1);// збільшуючи індекс i на 1, щоб перейти до наступної пари символів для обміну.
+}
+
+int main() {
+ string st = "hello";
+   cout <<  stringS(st) << endl;
+   
+return 0;
+}
+
+Задача 
+* Задача на обчислення факторіала
+Створіть функцію, яка обчислює факторіал заданого числа рекурсивно.*/
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+int factorial(int n)
+{
+    if(n <= 1 || n <= 0)
+    return 1;
+    else
+    return n * factorial(n-1);
+}
+int main() {
+int number = 5;
+cout << " '\n'Факторіал числа " << number << "! = " << factorial(number) << endl;
+
+return 0;
+}
+
+Задача
+/*4. *Задача на генерацію Фібоначчієвих чисел*
+   Напишіть функцію, яка генерує n-те число Фібоначчі, яке визначається через рекурсію або через ітеративний підхід. Функція повинна приймати номер числа в послідовності Фібоначчі та повертати його значення.
+*/
+#include <iostream>
+#include <string>
+#include <sstream> //  для класу istringstream  який дозволяє створювати потік з рядка, він дозволяє працювати з рядком як із потоком дани.
+#include <math.h>
+#include <vector>
+#include <fstream>
+using namespace std;
+
+//*Задача на генерацію Фібоначчієвих чисел*
+int number_F(int num)
+{
+    if(num == 0)
+   
+   return 0;
+   if(num == 1)
+   
+   return 1;
+   
+    return number_F (num-1) + number_F (num-2);
+   
+   
+}
+int main() {
+
+cout << "Значення номера числа  переданого у функцію number_F ()  = " << number_F (6) << endl;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+                                                                Перевірка знань пройденого матеріалу
+
+Задача 35 Використовуйте auto в циклі for, щоб ітерувати по std::vector<int>.
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+ vector<int>array{3,8,5,4,9,10};
+  cout<<"Масив vector<int>array :"<<endl;
+  for (auto element:array)
+  {
+     cout<<element<<endl;
+  }
+  return 0;
+}
+Задача 36  Створіть динамічний масив цілих чисел, а потім видаліть його.
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+int *array1=new int[5];
+delete[]array1;
+array1=0;
+ return 0;
+}
+Задача 37Створіть вказівник на ціле число, 
+присвойте йому адресу змінної і виведіть Основне Використання Вказівника: 
+Створіть вказівник на ціле число, присвойте йому адресу змінної і виведіть 
+значення через вказівник..
+ 
+#include <iostream>
+using namespace std;
+int main()
+{
+int value=5;
+int* ptr=&value;
+cout<<"значення через вказівник\n"<<*ptr<<endl;
+return 0;
+}
+Задача 38 Використовуйте цикл foreach для ітерування та виведення елементів масиву 
+цілих чисел. 
+#include <iostream>
+using namespace std;
+int main()
+{
+int array2[5]={5,8,6,7,9};
+cout<<"ітерування елементів масиву"<<endl;
+for(auto i:array2)
+{
+    cout<<i<<endl;
+}
+ return 0;
+}
+Задача 39 Створіть std::vector<int> і додайте в нього кілька чисел. Використовуйте 
+цикл для виведення елементів вектора.
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+vector<int>array3={1,2,3,4};
+ array3.resize(7);
+  cout<<"Додавання елментів до вектора "<<endl;
+ for(int j:array3)
+ {
+     cout<<j<<endl;
+ }
+ return 0;
+}
+Задача 40 Створіть std::vector<int> і використовуйте ітератор для виведення всіх елементів.
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+vector<int>array4={1,2,5,8,10};
+ auto begin{ &array4[0] };
+ auto end{begin + size(array4)};
+ cout<<"Виведення елементів через ітератори"<<endl;
+for(auto ptr{begin };ptr!= end;ptr++)
+{
+    cout<<*ptr<<endl;
+}
+ return 0;
+}
+Задача 41 Напишіть функцію, яка приймає структуру Car і виводить
+марку та рік випуску автомобіля.*/
+
+#include <iostream>
+using namespace std;
+
+struct Car
+{
+    string make="Opel";
+    int year=1985;
+    int mileage =100;
+};
+int main()
+{
+for (int i = 0; i < 3; i++)
+    {
+        cout << cars[i].make << endl;
+        cout << cars[i].year << endl;
+        cout << cars[i].mileage << endl;
+    }
+return 0;
+}
+Заача 42 Перетворення в Integer: Створіть enum з кольорами світлофора (червоний,
+ жовтий, зелений). Напишіть код, який перетворює значення enum у відповідне 
+ ціле число.
+#include <iostream>
+using namespace std;
+int main()
+{
+enum Trafficlights 
+{
+    TRAFFICLIGHTS_RED,
+    TRAFFICLIGHTS_YELLOW,
+    TRAFFICLIGHTS_GREEN,
+}; 
+Trafficlights RED=TRAFFICLIGHTS_RED;
+cout<<RED<<endl;
+Trafficlights YELLOW=TRAFFICLIGHTS_YELLOW;
+cout<<YELLOW<<endl;
+Trafficlights GREEN=TRAFFICLIGHTS_GREEN;
+cout<<GREEN<<endl; 
+ return 0;
+}
+Задача 43 Використання Enum в Switch: Використовуйте enum, створений для днів тижня,
+в операторі switch, щоб вивести рядок "Weekend" для суботи та неділі, і "Weekday" 
+для інших днів.
+#include <iostream>
+using namespace std;
+enum Weekdays
+{
+  WEEKDAY_MONDAY,
+  WEEKDAY_TUESDAY,
+  WEEKDAY_WEDNESDAY,
+  WEEKDAY_THURSDAY,
+  WEEKDAY_FRIDAY, 
+  WEEKDAY_SATURDAY, 
+  WEEKDAY_SUNDAY, 
+};
+  void printDay() 
+   {
+     enum Weekdays day;
+        switch(day)
+        {
+            case WEEKDAY_MONDAY:
+                cout<<"ПОНЕДІЛОК  Weekday"<<endl;
+            case WEEKDAY_TUESDAY:
+                 cout<<"ВІВТОРОК   Weekday"<<endl;
+            case WEEKDAY_WEDNESDAY:
+                cout<<"СЕРЕДА     Weekday"<<endl;
+            case WEEKDAY_THURSDAY:
+                cout<<"ЧЕТВЕРГ    Weekday"<<endl;
+            case WEEKDAY_FRIDAY:
+                 cout<<"П'ЯТНИЦЯ   Weekday"<<endl;
+            case WEEKDAY_SATURDAY:
+                  cout<<"СУББОТA    Weekend"<<endl;
+            case WEEKDAY_SUNDAY:
+                  cout<<"НЕДІЛЯ     Weekend"<<endl;
+                 break;
+        }
+    
+   }
+
+int main()
+{
+printDay();
+ return 0;
+}
+Задача 44  Створення Enum: Оголосіть enum для представлення днів тижня.
+Використовуйте його, щоб вивести назву середи.
+#include <iostream>
+using namespace std;
+int main()
+{
+enum Day {
+  Monday,
+Tuesday,
+Wednesday,
+Thursday,
+Friday,
+Saturday,
+Sunday  
+    };
+    Day day =Wednesday;
+ std::cout << day << std::endl; 
+  return 0;
+}
+Задача 45  Оголошення та Використання Структури: Створіть структуру Car, що
+містить поля make (марка) та year (рік випуску). Створіть об'єкт цієї
+структури та присвойте йому значення. 
+#include <iostream>
+using namespace std;
+int main()
+{
+struct Car{
+string make;
+     int year;
+};
+Car color;
+
+color.make="opel";
+color.year=1985;
+cout<<color.make<<endl;
+cout<<color.year<<endl;
+  return 0;
+}
+Задача 46 Простий Switch: Напишіть switch оператор для змінної типу int, який 
+виводить "Small" для значень менше 5, "Medium" для значень від 5 до 10 та "Large" 
+для значень більше 10.
+#include <iostream>
+using namespace std;
+int main()
+{
+   int value;
+    std::cout << "Enter an integer: ";
+    std::cin >> value;
+
+    switch (value) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            std::cout << "Small" << std::endl;
+            break;
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+            std::cout << "Medium" << std::endl;
+            break;
+        default:
+            if (value > 10) {
+                std::cout << "Large" << std::endl;
+            }
+            break;
+    }
+return 0;
+}
+Задача 47 Goto у Циклі: Додайте goto у цикл for, щоб перервати його при певній умові.
+Goto для Обробки Помилок: Використовуйте goto для переходу до блоку обробки
+помилок, якщо виникає певна умова помилки.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ int z;
+    cout<<"Введіть додатні числа від 1 до 9,отримайте слова подяки"<<endl;
+     tryagain:
+  cin>>z;
+   for(int i =1;i<=9;i++)
+   {
+   if( z<1||z > 9)
+     {
+         cout<<"Помилка умови!!!спробуйте знову"<<endl;
+        goto tryagain;
+     }
+     else
+         cout<<"Дякую!!!";
+   }
+   cout<<endl;
+  return 0;
+}
+Задача 48 Вказівник на Вказівник: Створіть вказівник на вказівник цілого числа і виведіть
+значення.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int number=10;
+ int *iptr=&number;
+ int **iptriptr= &iptr;
+ cout<<**iptriptr<<endl;
+  return 0;
+}
+Задача 49 Foreach зі Структурою: Використовуйте цикл foreach для ітерування по масиву 
+або вектору структур Car, створених раніше, і виведення інформації про кожен
+автомобіль.
+
+#include <iostream>
+using namespace std;
+struct Car
+{
+    string make;
+    int year;
+    int mileage;
+};
+int main()
+{
+Car array1[3];
+array1[0].make = "Opel";
+array1[0].year = 1992;
+array1[0].mileage = 15;
+array1[1].make = "Korl";
+array1[1].year = 2022;
+array1[1].mileage = 100;
+array1[2].make = "Mitsubishi";
+array1[2].year = 1999;
+array1[2].mileage = 10;
+ 
+for (auto i : array1)
+{
+    cout << i.make << endl;
+    cout << i.year << endl;
+    cout << i.mileage << endl;
+}
+   return 0;
+}
+Задача 50  Вказівник і Масиви: Використовуйте вказівник для ітерування по елементах масиву
+цілих чисел.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int array3[5]={2,6,7,8,3};
+auto begin{ &array3[0] };
+auto end{ begin +size(array3) };
+for (auto ptr{ begin }; ptr != end; ++ptr)
+{
+     std::cout << *ptr <<endl;
+}
+   return 0;
+}
+Задача 51 Ітератори та Функції STL: Використовуйте ітератор для знаходження мінімального
+та максимального елементу у std::vector<int>.
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+vector <int> vec = {11, 22, 2, 5, 1, 4};
+
+auto min_it = min_element(vec.begin(), vec.end());
+auto max_it = max_element(vec.begin(), vec.end());
+
+cout << *min_it << endl;
+cout << *max_it << endl;
+  return 0;
+}
+Задача 52 Foreach зі Списком: Створіть std::list<int> і використовуйте цикл foreach для 
+виведення його елементів.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+std::cout << " Введіть число: ";
+int length;
+std::cin >> length;
+int *array1 = new int[length];
+std::cout << "Розмір масиву складається з  " << (length) <<" елемнтів" <<endl;
+return 0;
+}
+Задача 53 Доступ до Елементів: Покажіть, як отримати доступ до елементів вектора за 
+ індексом.
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+cout <<" Доступ до елемент вектора :  "<< endl;
+vector <int> element {47,78,98,100,99};
+
+cout <<" елемент з індексом  0 :  "<< element[0] << endl;
+cout <<" елемент з індексом  1 :  "<< element[1] << endl;
+cout <<" елемент з індексом  2 :  "<< element[2] << endl;
+cout <<" елемент 3 індексом  3 :  "<< element[3] << endl;
+cout <<" елемент з індексом  4 :  "<< element[4] << endl;
+  return 0;
+}
+Задача 54 Видалення Елементів: Напишіть код, який видаляє елементи з вектора за певними 
+критеріями.
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+bool value=false;
+vector <int> array2 = {1,2,3,4,5,6,7,8,9,10};
+
+if (value)
+{
+    //array2.resize(9);
+    array2.pop_back();
+    cout << "\nЕлементи масиву видалено :" <<endl;
+for ( auto ielement : array2 )
+    cout << ielement <<" ";
+}
+else if(!value)
+{
+    cout << "\nЕлементи масиву відновлено :" << endl;
+for ( auto ielement : array2 )
+    cout << ielement << " ";
+}
+cout<<endl;
+  return 0;
+}
+Задача 55 Ініціалізація та Вивід: Ініціалізуйте динамічний масив з 5 елементів та 
+використовуйте цикл для його виведення.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+int *array = new int [5] {5,10,11,78,25};
+    
+    cout << "\n Динамічно вділений  масив *array :"<< std::endl;    
+for( int element = 0 ; element < 5 ; element++ )
+    std::cout << array[element] << std::endl;    
+  return 0;
+}
+
+                                                  Тема "Вивчаємо та практикуємося  КЛАСИ "
+
+Задача 56  /*Задача 1: Клас Time з геттерами, сеттерами та перевантаженням операторів
+Мета:
+Створіть клас Time, який демонструє використання геттерів, сеттерів, конструкторів,
+а також перевантаження операторів для роботи з часом.
+
+Завдання:
+Клас Time: Визначте клас Time з приватними атрибутами для годин, хвилин та секунд.
+Конструктори: Реалізуйте конструктор за замовчуванням, що ініціалізує час 00:00:00,
+і параметризований конструктор для встановлення конкретного часу.
+Геттери та Сеттери: Додайте геттери та сеттери для кожного з атрибутів.*/
+
+#include <iostream>
+using namespace std;
+class Time {
+private:
+    double oclock;
+    double min;
+    double sec;
+public:
+    Time()
+    {
+      oclock = 0;
+      min = 0;
+      sec  = 0;
+    }
+    Time(double oclock,double min,double sec)
+    {
+        this->oclock=oclock;
+        this->min=min;
+        this->sec=sec;
+    }
+void  SetTimeOclock(double oclock)
+    {
+      this->oclock=oclock;  
+    }
+    void  SetTimeMin(double min)
+    {
+        this->min=min;
+    }
+void  SetTimeSec(double sec)
+    {
+      this->sec=sec;  
+    }
+double getTimeOclock()
+    {
+        return oclock;
+    }
+double getTimeMin()
+    {
+        return min;
+    }
+double getTimeSec()
+    {
+        return sec;
+    }
+};
+int main()
+{
+Time time1;
+time1.SetTimeOclock(05);
+time1.SetTimeMin(06);
+time1.SetTimeSec(53);
+cout << time1.getTimeOclock() << endl;
+cout << time1.getTimeMin() << endl; 
+cout << time1.getTimeSec() << endl;
+retur 0;
+}
+
+Розв'язок 2 - архаїчно  правельний!!!
+class Time {
+
+    int hour;
+    int min;
+    int sec;
+
+public:
+    Time()
+    {
+        hour = 0;
+        min = 0;
+        sec  = 0;
+    }
+    
+    Time(double hour, double min, double sec)
+    {
+        this->hour = hour;
+        this->min = min;
+        this->sec = sec;
+    }
+    
+    void setHour(double hour)
+    {
+        this->hour = hour;  
+    }
+    
+    void setMin(double min)
+    {
+        this->min = min;
+    }
+    
+    void setSec(double sec)
+    {
+        this->sec=sec;  
+    }
+    
+    
+    double getHour()
+    {
+        return hour;
+    }
+    
+    double getMin()
+    {
+        return min;
+    }
+    
+    double getSec()
+    {
+        return sec;
+    }
+    
+    string getTime()
+    {
+        string timeStr = "";
+        if (hour < 10)
+        {
+            timeStr += "0" + to_string(hour) + ":";
+        } else {
+            timeStr += to_string(hour) + ":";
+        }
+        if (min < 10)
+        {
+            timeStr += "0" + to_string(min) + ":";
+        } else {
+            timeStr += to_string(min) + ":";
+        }
+        if (sec < 10)
+        {
+            timeStr += "0" + to_string(sec);
+        } else {
+            timeStr += to_string(sec);
+        }
+        return timeStr;
+    }
+};
+int main()
+{
+Time time2(5, 10, 15); 
+
+cout << time2.getHour() << endl;
+cout << time2.getMin() << endl; 
+cout << time2.getSec() << endl; 
+
+ 
+ return 0;
+}
+
+
+Задача 57 ### Задача 3: Клас `Rectangle` з використанням геттерів, сеттерів і конструкторів
+
+#### Мета:
+Розробити клас `Rectangle` для представлення прямокутника та розрахунку його площі
+та периметра, використовуючи геттери, сеттери, і конструктори.
+
+#### Завдання:
+1. **Клас Rectangle**: Визначте клас `Rectangle` з приватними атрибутами для 
+ширини (`width`) та висоти (`height`).
+2. **Конструктори**: Реалізуйте два конструктори - один за замовчуванням, який 
+ініціалізує прямокутник зі стандартними розмірами, і параметризований конструктор 
+для встановлення власних розмірів.
+3. **Геттери та Сеттери**: Додайте методи для встановлення та отримання ширини і
+висоти прямокутника. Переконайтеся, що значення ширини та висоти не можуть бути 
+негативними.
+4. **Функціональність**: Реалізуйте публічні методи для розрахунку площі (`getArea()`)
+та периметра (`getPerimeter()`) прямокутника.
+
+#### Приклад використання:
+- Створіть об'єкт `Rectangle`, встановіть його розміри, розрахуйте та виведіть 
+площу та периметр.
+#include <iostream>
+#include <cmath>
+using namespace std;
+class Rectangle 
+{
+   double width;
+   double height;
+public:
+    Rectangle() {
+    double width = 10.5;
+    double height = 5.5; 
+    }
+    Rectangle( double width, double height){
+    this-> width = width;
+    this-> height = height;
+    }
+    double getWidth(){
+        return width;
+    }
+    double getHeight(){
+        return height;
+    }
+    void setWidth(double width){
+        if(width < 0){
+            std::cout << "Помилка вводу" << std::endl;
+        }else{
+        this->width = width;
+    }
+    }
+    void setHeight(double height){
+        if(height < 0){
+            std::cout << "Помилка вводу" << std::endl;
+        }else{
+            this-> height = height;
+        }
+    }
+    
+   double getArea(){
+       return height * width;
+   } 
+   double getPerimeter(){
+        return (height + width) * 2;
+   }  
+};
+int main()
+{
+
+
+
+  return 0;
+}#include <iostream>
+
+using namespace std;
+int main()
+{
+Rectangle  rectangle(20.5, 45.6);
+ cout << rectangle.getArea() << endl;
+ cout << rectangle.getPerimeter() << endl;
+  return 0;
+}
+
+Задача 58 ### Задача 2: Клас Account з підтримкою транзакцій
+
+#### Мета:
+Розробити клас `Account`, який імітує банківський рахунок з можливістю внесення 
+та зняття коштів, демонструючи використання геттерів, сеттерів і конструкторів.
+
+#### Завдання:
+1. **Клас Account**: Визначте клас `Account` з приватними атрибутами для 
+ідентифікатора рахунку, імені власника та балансу.
+2. **Конструктори**: Реалізуйте конструктор для ініціалізації ідентифікатора, 
+імені власника та початкового балансу.
+3. **Геттери та Сеттери**: Додайте геттери для кожного з атрибутів. Для бал
+
+ансу додайте методи для внесення та зняття коштів, перевіряючи, щоб баланс не 
+ставав негативним.
+4. **Виведення інформації**: Реалізуйте метод для виведення інформації про рахунок, 
+включаючи ідентифікатор, ім'я власника та поточний баланс.
+
+#### Приклад використання:
+- Створіть об'єкт `Account`, виконайте операції внесення та зняття коштів, а 
+потім виведіть актуальну інформацію про стан рахунку.
+#include <iostream>
+#include <cmath>
+#include <string.h> 
+using namespace std;
+
+class Account 
+{
+
+    double indictor;
+    string name;
+    double balans;
+    
+public:
+    Account(double indictor, string name, double balans)
+    {
+        this->indictor = indictor; 
+        this->name = name;
+        this->balans = balans;
+    }
+    
+    double getIndictor() {
+        return indictor;
+    }
+    
+    string getName() {
+        return name;
+    }
+    
+    double getBalans() {
+        return balans;
+    }
+    
+    void deposit(double money)
+    {
+        if (money > 0) {
+            this->balans += money;  
+        } else {
+            cout << "Помилка! Ви вводите негативну кількість грошей!!!" << endl;
+        } 
+    }
+    
+    void withdraw(double money)
+    {
+        if (this->balans >= money) {
+            this->balans -= money;
+        } else {
+            cout << "Помилка! У вас нема стільки коштів!!!" << endl;        
+        }
+    }
+};
+
+int main()
+{
+Account account(1, "Vasya", 3000);
+
+cout << "Акаунт #" << account.getIndictor() << endl;
+cout << " Ім'я: " << account.getName() << endl;
+cout << " Поточний баланс: " << account.getBalans() << endl;
+account.deposit(1000);
+cout << "Поточний баланс: " << account.getBalans() << endl;
+account.withdraw(1250);
+cout << "Поточний баланс: " << account.getBalans() << endl;
+account.withdraw(10000);
+cout << "Поточний баланс: " << account.getBalans() << endl;
+account.deposit(-10000);
+cout << "Поточний баланс: " << account.getBalans() << endl;
+
+  return 0;
+}
+
+Задача 59 /*### Задача 4: Клас `Book` з реалізацією геттерів, сеттерів, конструкторів і 
+ поліморфізму через перевантаження функцій
+
+#### Мета:
+Створити клас `Book`, що дозволяє зберігати інформацію про книги і надає можливість 
+виведення цієї інформації у різних форматах.
+
+#### Завдання:
+1. **Клас Book**: Визначте клас `Book` з приватними атрибутами для назви книги 
+(`title`), автора (`author`) і року видання (`year`).
+2. **Конструктори**: Реалізуйте конструктор для ініціалізації всіх атрибутів книги.
+3. **Геттери та Сеттери**: Встановіть методи для отримання та встановлення назви 
+книги, автора та року видання.
+4. **Перевантаження функцій**: Реалізуйте метод printDetails для виведення 
+детальної інформації про книгу. Додатково перевантажте цей метод так, щоб він міг 
+приймати параметр, який визначає формат виводу (наприклад, короткий або повний).
+
+#### Приклад використання:
+- Створіть кілька об'єктів `Book` і виведіть інформацію про кожну книгу, 
+використовуючи різні формати виводу.*/  
+
+#include <iostream>
+using namespace std;
+
+class Book
+{
+private:
+    string title;
+    string author;
+    int year;
+public:
+    Book(string title, string author, int year)
+    {
+        this -> title = title;
+        this -> author = author;
+        this -> year = year;
+    }
+
+    void setTitle(string title)
+    {
+        this -> title = title; 
+    }    
+    void setAuthor(string author)
+    {
+        this -> author = author;   
+    }    
+    void setYear(int year)
+    {
+        this -> year = year;
+    } 
+    
+    string geTtitle()
+    {
+        return title;
+    }
+    string getAuthor()
+    {
+        return author;
+    }
+    int getYear()
+    {
+        return year;
+    }
+    
+    void printDetails()
+    {
+        cout << "Назва книги: \n" << getTitle() << endl;  
+        cout << "Ф.І.П Автора: \n" << getAuthor() << endl;
+        cout << "Рік видання :\n" << getYear() << endl;
+    }
+    //Перевантаження функції printDetails
+     void printDetails(int price)
+    {
+        cout << "Вартість книжки :\n" << price <<" грн."<< endl;
+    }    
+};
+ 
+int main()
+{
+Book book = {"Назустріч людям", "Андрій Платонов", 1986};
+book.printDetails(); 
+book.printDetails(200); 
+  return 0;
+}
+
+
+Задача 60 Задача 4: Клас "Автомобіль"
+Створіть клас "Автомобіль", який включає:
+
+марку автомобіля (рядок)
+модель автомобіля (рядок)
+рік випуску (ціле число)
+об'єм двигуна (дійсне число)
+Реалізуйте конструктор, який ініціалізує всі ці поля. Надайте геттери для 
+кожного поля та сеттери для року випуску та об'єму двигуна. Сеттери повинні 
+перевіряти, що введені дані є логічно коректними (наприклад, рік випуску повинен
+бути реалістичним, об'єм двигуна - позитивним числом).
+
+#include <iostream>
+using namespace std;
+
+class Car
+{
+    string make;
+    string model;
+    int year;
+    double volume;
+public:
+    Car(string make, string model, int year, double volume) {
+        this->make = make;
+        this->model = model;
+        this->year = year;
+        this->volume = volume;
+    };
+    
+    void setMake(string make) 
+    {
+        this -> make = make;
+    }   
+    void setModel(string model)
+    {
+        this -> model = model;
+    }    
+    void setYear(int year)
+    {
+        if (year > 1885)
+            this -> year = year;
+    }   
+    void setVolume(double volume)
+    {
+        if (volume > 0)
+        this -> volume = volume;
+    }
+    
+    
+    string getMake()
+    {
+        return make;
+    }    
+    string getModel()
+    {
+        return model; 
+    }     
+    int getYear()
+    {
+        return year;
+    }    
+    double getVolume()
+    {
+        return volume;
+    }
+};
+
+int main()
+{
+Car car("toyota","camry",2022,2.5);
+cout <<"Марка авто :"<< car.getMake() << endl;
+cout <<"Модель авто :"<< car.getModel() << endl;
+cout <<"Рік виробництва авто :"<< car.getYear() << endl;
+cout <<"Об'єм двигуна :"<< car.getVolume() << endl;
+  return 0;
+}
+
+
+Задача 61 Задача 5: Клас "Тривимірний вектор"
+Створіть клас "Тривимірний вектор", який містить:
+
+координату X (дійсне число)
+координату Y (дійсне число)
+координату Z (дійсне число)
+Реалізуйте конструктор, що приймає три аргументи для ініціалізації цих полів. 
+Додайте геттери та сеттери для кожної координати. Реалізуйте метод для обчислення
+довжини вектора.
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+class Three_dimensionalVector
+{
+  double x, y, z;
+public:
+    Three_dimensionalVector (double x, double y, double z)
+  {
+	this -> x = x;
+	this -> y = y;
+	this -> z = z;
+  }
+  void setX (double x)
+  {
+	this -> x = x;
+  }
+  void setY (double y)
+  {
+	this -> y = y;
+  }
+  void setZ (double z)
+  {
+	this-> z = z;
+  }
+
+  double getX ()
+  {
+	return x;
+  }
+  double getY ()
+  {
+	return y;
+  }
+  double getZ ()
+  {
+	return z;
+  }
+ double vectorlength(Three_dimensionalVector vector )
+  {
+  return sqrt(pow(vector.x,2) + pow(vector.y,2 ) + pow(vector.z,2));
+  }  
+  };
+
+int main()
+{
+Three_dimensionalVector vector = {12.0,5.5,2.0};
+cout << vector.vectorlength(vector) << endl;
+  return 0;
+}
+                                               	СТАТИЧНІ ЧЛЕНИ ТА МЕТОДИ КЛАСУ
+Задача 62: Ідентифікатор екземпляру
+  
+  Створіть клас `Item`, у якому буде статичне поле `nextID`, яке слугуватиме для генерації унікального ідентифікатора для 
+кожного нового екземпляра класу. В кожного екземпляра має бути нестатичне поле `id`, яке ініціалізується за допомогою 
+`nextID` при створенні екземпляра. Статичне поле `nextID` має інкрементуватися кожного разу, коли створюється новий 
+екземпляр.
+
+#include <iostream>
+using namespace std;
+
+class Item
+{
+public:
+    int id;
+    static int nextID;
+    Item()
+    {
+        this-> id = nextID;
+        nextID++;
+    }
+   
+};
+  int Item::nextID = 0;
+  
+int main()
+{
+Item item; 
+
+item.id=Item::nextID;
+ std::cout <<"id = "<< item.id << std::endl;
+ Item item1;
+ item1.id=Item::nextID;
+ std::cout <<"id = "<< item1.id << std::endl;
+ Item item2;
+ item2.id=Item::nextID;
+ std::cout <<"id = "<<item2.id << std::endl;
+  return 0;
+}
+Задача 63: Сумарна кількість балів
+
+Створіть клас `Student`, який містить статичне поле `totalPoints` для зберігання 
+загальної кількості балів, набраних всіма студентами. Кожен раз, коли студент отримує 
+бали (через метод, наприклад, `addPoints`), це поле має інкрементуватися на відповідну 
+кількість балів. Також додайте статичний метод `getTotalPoints()`, щоб отримати 
+загальну кількість балів*/
+#include <iostream>
+using namespace std;
+
+class Student
+{
+ public:
+    static int totalPoints;
+    Student() {}
+    int addPoints(int a)
+    {
+        return totalPoints += a;
+    }
+    static int getTotalPoints();
+};
+int Student::totalPoints = 20;
+int Student::getTotalPoints()
+{
+    return totalPoints;
+}
+int main()
+{
+Student  student;
+ student.addPoints(60);
+cout << Student::getTotalPoints() << endl;
+  return 0;
+}
+
+Задача 64: Загальна кількість зареєстрованих користувачів
+Створіть клас `User`, у якому буде статичне поле `userCount`, що відстежує загальну 
+кількість зареєстрованих користувачів. Кожен раз при створенні нового екземпляра класу 
+`User`, збільшуйте `userCount` на одиницю. Додайте метод (наприклад, статичний метод 
+`getUserCount()`), який повертатиме загальну кількість користувачів.
+
+#include <iostream>
+using namespace std;
+class User
+{
+public:
+    static int userCount;
+    User()
+    {
+         userCount ++;
+    }
+    static int getUserCount();
+};
+int User::userCount = 100;
+int User::getUserCount()
+{
+    return  userCount;
+}
+int main()
+{
+cout <<" Загальна кількість користувачів :"<< User::userCount << endl;
+for(int i = 0; i < 10;i++)
+{
+User user;
+cout <<""<<User::getUserCount() << endl;
+}
+  return 0;
+}
+Задача 65 : Контроль версій програми
+
+Створіть клас `Software`, який містить статичні поля `version` та `build` для 
+зберігання поточної версії та збірки програмного забезпечення відповідно. Додайте 
+статичні методи для оновлення цих полів та методи для отримання поточних значень 
+версії та збірки.
+#include <iostream>
+using namespace std;
+class Software
+{
+public:
+    static int version;
+    static double  build;
+Software() {}
+static void setVersion(int version);
+static int getVersion();
+
+static void setBuild(double);
+static double getBuild();
+};
+
+int Software::version = 11;
+void  Software::setVersion(int version)
+{
+    Software::version = version;
+}
+int Software::getVersion()
+{
+    return version;
+}
+double Software::build = 2011.1;
+
+double Software::getBuild()
+{
+    return build;
+}
+ void Software::setBuild(double build)
+{
+    Software::build = build;
+}
+
+int main()
+{
+cout <<"Верісія  ПО 2011 року: "<< Software::version << endl;
+cout <<"Збірка ПО 2011року: "<< Software::build << endl;
+Software::setVersion(24);
+Software::setBuild(2024.1);
+cout <<"Оновлена версія  ПО 2024 року: " << Software::getVersion() <<endl;
+cout <<"Оновлена збірка  ПО 2024 року: " << Software::getBuild() << endl;
+ return 0;
+}
+
+Задача 66:Створіть клас `Cache`, який містить статичне поле `cacheData`, що представляє 
+собою спільний кеш даних (наприклад, використовуючи `std::map` або `std::unordered_map` 
+для зберігання ключів та значень). Додайте статичні методи для роботи з кешем, такі як 
+додавання даних, отримання даних та очищення кешу.
+#include <iostream>
+using namespace std;
+map <int,std::string> myMap
+    {
+    {1,"Телефон"},
+    {2,"Персональний комп'ютеp"},
+    {3,"Ноутбук"}
+    };
+ 
+class Cache
+{
+      
+public:
+    static int cacheData;
+    Cache(){
+    cacheData++;
+    }
+    void getcacheData()
+    {
+    cout<<"Запис "<<cacheData++ <<" збережено в КЕШ пам'яті \n"<<endl;
+    }
+    static void addСache();
+    static void getСache();
+    static void clearcache();
+};
+
+    int Cache::cacheData = 0;
+    
+    void Cache::addСache()
+    {
+        cout <<"\nДодавання  інформації в КЕШ:"<<endl;
+    myMap.insert (pair<int,string>(int(4),string("Планшет"))) ;
+    }
+    
+    void Cache::getСache()
+    {
+        for ( auto& [key, value] :myMap)
+        std::cout << '[' << key << "] = " << value << ";\n ";
+    }
+    
+    void Cache::clearcache()
+    {
+       
+    cout << "Видалення  інформації з КЕШ :\n"<<" " ;
+    myMap.erase(4); 
+    }
+int main()
+{
+Cache record;
+ cout<<"Існуюча інформація в КЕШ пам'ять :"<<endl;
+map <int,std::string> myMap;
+Cache::getСache();
+record.getcacheData();
+cout<<"--------------------------------"<<endl;
+Cache::addСache();
+Cache::getСache();
+record.getcacheData();
+cout<<"--------------------------------"<<endl;
+Cache::clearcache();
+Cache::getСache();
+record.getcacheData();
+  return 0;
+}
+!!  Варіант 2 рішення задачі 66 моїм репетитором:!!!
+#include <iostream>
+#include <map>
+#include <string>
+using namespace std;
+
+class Cache
+{
+public:
+    static map<int, string> cacheData;
+
+    Cache() {}
+
+    static void addCache(int key, const string& value)
+    {
+        cout <<"Додавання інформації в КЕШ: " << value << endl;
+        cacheData[key] = value;
+    }
+
+    static void getCache()
+    {
+        cout << "Інформація в КЕШ пам'яті:\n";
+        for (const auto& [key, value] : cacheData)
+        {
+            cout << '[' << key << "] = " << value << ";\n";
+        }
+    }
+
+    static void clearCache(int key)
+    {
+        if (cacheData.find(key) != cacheData.end())
+        {
+            cout << "Видалення інформації з КЕШ: " << cacheData[key] << endl;
+            cacheData.erase(key);
+        }
+        else
+        {
+            cout << "Ключ " << key << " не знайдено в КЕШ." << endl;
+        }
+    }
+};
+
+map<int, string> Cache::cacheData;
+int main ()
+{
+    Cache::addCache(1, "Телефон");
+    Cache::addCache(2, "Персональний комп'ютер");
+    Cache::addCache(3, "Ноутбук");
+    cout << endl;
+    Cache::getCache();
+    cout << "--------------------------------" << endl;
+    cout << endl;
+    Cache::addCache(4, "Планшет");
+    cout << endl;
+    Cache::getCache();
+    cout << endl;
+    cout << "--------------------------------" << endl;
+    cout << endl;
+    Cache::clearCache(4);
+    Cache::getCache();
+
+    return 0;
+}
+
+Задача 67  : Лічильник екземплярів класу
+Створіть клас Car, який міститиме статичне поле count для підрахунку кількості 
+створених екземплярів класу. Кожен раз при створенні нового екземпляру класу Car,
+збільшуйте count на одиницю. Додайте статичний метод getCount(), який повертатиме 
+поточну кількість екземплярів.
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+class Car 
+{
+public:
+    static int count;
+
+    Car(){
+         count++;
+    }
+    
+    int getCount(){
+       return count;  
+    }
+};
+int Car::count = 0;
+int main
+{
+Car car;
+ cout << Car::count << endl;
+Car car1;
+cout << Car::count << endl;
+Car car2;
+cout << Car::count << endl;
+return 0;
+}
+
+Задача 68  Константні статичні поля
+Визначте клас MathConstants, який містить статичні константи, такі як PI та E. 
+Це дозволить вам використовувати ці константи у вашому коді без необхідності створення 
+екземпляра класу.
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+class MathConstants
+{
+public:
+    static const double Pi;
+    static const double E;
+    MathConstants(){}
+};
+const double MathConstants::Pi = 3.14;
+const double MathConstants::E = 2.71;
+int main
+{
+MathConstants mathConstants; 
+cout <<"PI ="<< MathConstants::Pi << endl;
+cout <<"E ="<< MathConstants::E << endl;
+return 0;
+}
+
+Задача 69 Спільний ресурс
+Створіть клас SharedResource, у якому буде статичне поле resource, яке імітує с
+пільний ресурс (наприклад, спільний буфер даних або лічильник доступів). 
+Реалізуйте методи для роботи з цим ресурсом (наприклад, інкрементування лічильника). 
+Використовуйте статичне поле таким чином, щоб всі екземпляри класу SharedResource
+могли доступатися до одного й того ж ресурсу.
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+class SharedResource
+{
+public:
+   static int resource;
+    SharedResource()
+    {
+        int count;
+    }
+    
+void print ()
+{
+    resource ++;
+}
+   int Work()
+   {
+     return  resource; 
+   }
+  
+};
+ int SharedResource::resource = 0; 
+
+
+int main ()
+{ 
+SharedResource sharedResource;
+sharedResource.print();
+cout << sharedResource.Work() << endl;
+    return 0;
+}
+                                         	ДРУЖНІ ФУНКЦІЇ КЛАСІВ ТА МЕТОДИ
+
+Задача 70 : Дружня функція для доступу до приватних даних
+Завдання: Створіть клас Box, який зберігає висоту, ширину та глибину як приватні
+члени. Напишіть дружню функцію calculateVolume, яка приймає об'єкт Box і повертає 
+об'єм коробки.
+#include <iostream>
+using namespace std;
+class Box
+{
+int top;
+int width;
+int depth;
+public:
+ Box(int top,int width,int depth) 
+ {
+    this-> top = top;
+    this-> width = width;
+    this-> depth =  depth;
+ }
+friend int calculateVolume(Box &box);
+
+};
+ int calculateVolume(Box &box)
+ {
+   return  box.top*box.width*box.depth;
+}
+int main()
+{
+Box box {2,8,10};
+calculateVolume(box);
+  return 0;
+}
+
+Задача 71: Дружні функції для реалізації арифметичних операцій
+
+Завдання: Створіть клас Number з приватним членом, який зберігає значення типу int.
+Реалізуйте дружні функції add та multiply, які приймають два об'єкти типу Number 
+і повертають результат додавання або множення їхніх приватних значень відповідно.
+
+#include <iostream>
+using namespace std;
+class Number
+{
+ int value;
+ public:
+ Number(int value)
+ {
+     this-> value = value;
+ }
+ friend int add(Number &a, Number &b);
+ friend int multiply(Number &a, Number &b);
+};
+int add(Number &a, Number &b)
+{
+    return a.value + b.value;
+}
+int multiply(Number &a, Number &b)
+{
+    return  a.value * b.value;   
+}
+int main()
+{
+Number number {10};
+Number number1 {200};
+cout <<"Додавання: "<< add(number,number1) << endl;
+cout <<"Множення: "<< multiply (number,number1) << endl;
+  return 0;
+}
+Задача 72: Доступ до приватних членів через дружню функцію
+Завдання: Створіть клас SecretNumber, який містить приватний член number. Напишіть
+дружню функцію revealSecret, яка приймає об'єкт SecretNumber і виводить його приватний
+член number.
+#include <iostream>
+using namespace std;
+
+class  SecretNumber
+{
+    int number;
+public:
+SecretNumber(int number)
+{
+    this-> number = number;
+}
+friend int revealSecret( SecretNumber &secretNumber);
+};
+int revealSecret( SecretNumber &secretNumber)
+{
+    return  secretNumber.number;
+}
+int main()
+{
+SecretNumber secretNumber {1000};
+cout << revealSecret(secretNumber) << endl;
+  return 0;
+}
+Задача 73:Модифікація приватних даних через дружній клас
+Завдання: Створіть клас Counter, який має приватний член для зберігання значення
+лічильника. Створіть клас CounterManager, який може збільшувати або зменшувати 
+лічильник класу Counter завдяки дружньому доступу.
+#include <iostream>
+
+using namespace std;
+class Counter
+{
+private:
+    int value;
+public:
+    Counter(int value)
+    {
+        this-> value = value;
+    }
+    friend class CounterManager;
+};
+
+class CounterManager
+{
+private:
+    bool increaseCounter;
+public:
+    CounterManager( bool increaseCounter)
+    {
+        this-> increaseCounter = increaseCounter;
+    }
+    void modification(Counter &counter)
+    {
+       if ( this->increaseCounter)
+       {
+           counter.value++;
+           std::cout <<counter.value ++ << std::endl;
+       }
+       else
+       {
+            counter.value--;
+           std::cout << counter.value -- << std::endl;
+       }
+    }
+};
+int main()
+{
+Counter counter{10};
+CounterManager counterManager(false);
+counterManager.modification(counter);
+  return 0;
+}
+
+Задача 74  Використання дружніх функцій для порівняння об'єктів
+Завдання: Створіть клас Rectangle, який зберігає ширину та висоту як приватні члени.
+Реалізуйте дружню функцію areEqual, яка приймає два об'єкти Rectangle і повертає true,
+якщо їх ширини та висоти рівні, і false в іншому випадку.
+
+#include <iostream>
+using namespace std;
+class Rectangle
+{
+private:
+    double top;
+    double width; 
+public:
+    Rectangle(double top,double width)
+    {
+        this-> top = top;
+        this-> width = width;
+    }
+   
+    friend bool areEqual(Rectangle &rectangle,Rectangle &rectangle1);
+};
+ bool areEqual(Rectangle &rectangle,Rectangle &rectangle1)
+{
+   if (rectangle.top == rectangle1.top && rectangle.width == rectangle1.width ) 
+        return true;
+   else
+        return false;
+   
+}
+int main()
+{
+Rectangle rectangle {10.0,10.0};
+Rectangle rectangle1={10.0,10.0};
+cout <<areEqual(rectangle,rectangle1) << endl;
+return 0;
+}
+задача 75 : Обмін приватними даними між класами через дружній клас
+Завдання: Створіть два класи Class1 та Class2, кожен з яких містить різні 
+приватні дані. Створіть третій клас DataSwapper, який має методи для обміну 
+даними між об'єктами Class1 та Class2. Забезпечте дружній доступ для DataSwapper 
+до цих класів.
+
+                                                             
+#include <string>
+#include <iostream>
+
+using namespace std;
+
+// class Class1
+// {
+// string data;
+// public:
+//     Class1(string data)
+//     {
+//       this-> data = data; 
+//     }
+//     friend class DataSwapper;
+// };
+// class Class2
+// {
+// string data;
+// public:
+//     Class2(string data)
+//     {
+//       this-> data = data; 
+//     }
+//     friend class DataSwapper;
+// };
+
+// class DataSwapper
+// {
+//     bool datas;
+// public:
+//     DataSwapper(bool datas)
+//     {
+//         this-> datas = datas;
+//     }
+//     void dataExchange( Class1 &class1, Class2 &class2)
+//     {
+//         if (this-> datas)
+//         cout << class1.data <<" "<< class2.data << endl;
+//         else
+//         cout << class2.data << " " << class1.data << endl;
+//     }
+    
+// };
+int main()
+{
+// Class1 class1("Сидоренко");
+// Class2 class2("Максим");
+// DataSwapper dataSwapper();
+// dataSwapper.dataExchange(class1,class2);
+  return 0;
+}
+
+Задача 76:Дружні функції для роботи з потоками вводу/виводу
+Завдання: Створіть клас Logger, який містить приватну строку як журнал повідомлень.
+Напишіть дружні функції writeLog для додавання повідомлення до журналу та readLog 
+для виведення журналу на екран.
+#include <iostream>
+
+using namespace std;
+class Logger
+{
+  string Log;
+public:
+    Logger() {}
+  
+    friend void writeLog(Logger &logger,string message);
+    friend void readLog (Logger &logger);
+};
+
+void writeLog(Logger &logger,string message )
+ {
+     logger.Log += message;
+ }
+   void readLog (Logger &logger)
+   {
+       cout <<logger.Log<<endl;
+   }
+int main()
+{
+Logger logger;
+
+writeLog (logger, "message №1 \n");
+readLog (logger);
+  return 0;
+}
+
+                                            ПЕРЕВАНТАЖЕННЯ ФУНКЦІЙ
+
+Задача 77: Перевантаження операторів.
+Задача: Створіть клас Point, що представляє точку в двовимірному просторі зкоординатами x та y. Реалізуйте перевантаження 
+оператора + для додавання двох об'єктів типу Point.
+#include <iostream>
+
+using namespace std;
+class Point
+{
+    double x,y;
+public:
+    Point(double x, double y)
+    {
+        this-> x = x;
+        this-> y = y;
+    }
+      void getCoord() {
+        cout << x << " " << y << endl; 
+    }
+    friend Point operator+(Point &p1, Point &p2);
+ };
+ Point  operator+( Point &p1, Point &p2)
+  {
+      return Point(p1.x + p2.x, p1.y + p2.y);
+  }
+int main()
+{
+Point p1(4.5,5.4);
+Point p2(5.4,1.2);
+Point p3 = p1 + p2;
+p3.getCoord();
+  return 0;
+}
+                              ПЕРЕВАНТАЖЕННЯ ОПЕРАТОРІВ
+Задача 78  Перевантаження операторів вводу і виводу
+
+Реалізуйте клас Point, який представляє точку в двовимірному просторі з координатами
+x та y. Виконайте перевантаження операторів << (виводу) та >> (вводу) для цього класу.
+Вимоги:
+Оператор << має виводити координати точки у форматі (x, y).
+Оператор >> має дозволяти користувачу ввести координати x та y для точки.
+#include <iostream>
+using namespace std;
+
+
+class Point
+{
+    double x;
+    double y;
+public:
+     Point(double x = 2.5,double y = 1.0 ): x(x), y(y)
+    {
+    }
+    friend std::ostream& operator<<(std::ostream &out,const Point &point);
+    friend std::istream& operator>>(std::istream &in,Point &point);
+};
+    std::ostream& operator<< (std::ostream &out,const Point &point)
+    {
+        out << point.x <<" " << point.y <<"";
+        return out;
+    }
+    std::istream& operator>>(std::istream &in, Point &point)
+    {
+        in >> point.x >> point.y ;
+        return in;
+    }
+int main() {
+Point point;
+std::cout<<"Введіть координати х та у"<<endl ;
+std::cin >> point ;
+
+std::cout << "Ваші координати (" << point <<')'<< '\n';
+    return 0;
+}
+Задача 79 адача: Розробіть клас FunctionWrapper, що імітує поведінку математичної функції.
+Клас має зберігати дві змінні a і b та перевантажити оператор (), щоб можна було 
+викликати об'єкт як функцію з одним аргументом x і обчислити значення виразу ax + b.*
+#include <iostream>
+using namespace std;
+class FunctionWrapper
+{
+ public:   
+   double  a;
+   double  b;
+
+    FunctionWrapper( double a, double b ) :  a(a),  b (b) {}
+   
+     double & operator()(  double  x);
+    
+};
+    double &FunctionWrapper::operator()( double x)
+     {
+       return a * x + b;  
+     }
+
+int main()
+{
+
+FunctionWrapper f(2.0,1.1);
+std::cout << f(10) << std::endl;
+
+    return 0;
+}
+Задача 80 Задача: Створіть клас ArrayWrapper, який містить приватний масив цілих чисел 
+фіксованого розміру. Перевантажте оператор індексації [], щоб можна було безпечно
+доступати та змінювати елементи масиву за їх індексом.
+ #include <iostream>
+using namespace std;
+class ArrayWrapper
+{
+private:
+    int intarray[10];
+public:
+    
+    ArrayWrapper() {}
+  int& operator []( int index);
+};
+int& ArrayWrapper::operator []( int index)
+{
+    return intarray[index];
+}
+int main()
+{
+ArrayWrapper arrayWrapper;
+ arrayWrapper[5] = 75;
+ std::cout << arrayWrapper[5] << std::endl;
+ return 0;
+}
+Задача 81 Задача: Модифікуйте клас Counter, який представляє лічильник з приватною змінною
+count. Перевантажте префіксні та постфіксні версії операторів інкременту (++) та
+декременту (--), щоб вони відповідно збільшували та зменшували значення лічильника.
+#include <iostream>
+using namespace std;
+class Counter
+{
+    int count;
+public:
+    Counter(int c) :  count(c){}
+Counter& operator++();
+Counter& operator--();
+friend std::ostream& operator<< (std::ostream &out, Counter &c);
+};
+Counter& Counter::operator++()
+{
+    ++count;
+    return * this;
+}
+Counter& Counter::operator--()
+{
+    --count;
+    return *this;
+}
+std::ostream& operator<< (std::ostream &out,Counter &c)
+{
+  out << c.count;
+  return out;
+}
+int main()
+{
+Counter c(1);
+std::cout << c;
+ std::cout << ++c;
+std::cout <<--c;
+    return 0;
+}
+                               СПАДКУВАННЯ  КЛАСІВ
+Задача 82 Задача 1: Базовий клас і спадкоємець
+Завдання: Створіть базовий клас Animal з функцією-членом speak(), яка виводить 
+"I'm an animal". Потім створіть похідний клас Dog, який перевизначає функцію speak() так,
+щоб вона виводила "Woof woof".
+#include <iostream>
+using namespace std;
+class  Animal
+{
+   public:
+    void speak()
+    {
+        std::cout << "I'm an animal" << std::endl;
+    }
+};
+class Dog: public Animal
+{
+public:
+    void speak ()
+    {
+      cout << "Woof woof" <<endl;  
+    }
+};
+int main()
+{
+Animal animal;
+animal.speak();
+cout<<" "<<endl;
+Dog dog;
+dog.speak ();
+return 0;
+}
+Задача 83  Просте успадкування
+Завдання: Створіть клас Person з двома членами даних: name (рядок) і age (ціле число).
+Потім створіть клас Student, який успадковує від класу Person і додає новий член даних: 
+studentID (рядок). Напишіть конструктори для обох класів, які ініціалізують члени даних.
+#include <iostream>
+using namespace std;
+class  Person
+{
+    std::string name;
+    int age;
+public:
+    Person(std::string name,int age)
+    {
+        this -> name = name;
+        this -> age = age;
+    }
+    void preant()
+    {
+        cout <<  "Ім'я "  << name << " та Вік " << age << endl;
+    }
+};
+class Student:public Person
+{
+    std::string studentID;
+public:
+    Student(std::string name,int age,std::string studentID) :  Person( name,age)
+    {
+        this -> studentID = studentID;
+    }
+    
+    void preant()
+    {
+        cout <<  "ID"   << studentID << endl;
+    }
+};
+int main()
+{
+Person person ("Vasy",19);
+person.preant();
+Student student("Vasy",19,"12345");
+student.preant();
+return 0;
+}
+Задача 84 Урок №167. Перевизначення методів батьківського класу
+Задача: Створіть клас Animal з методом makeSound(), який виводить "Не визначено"
+до консолі. Потім створіть клас Dog, який наслідується від Animal, і перевизначте
+метод makeSound() так, щоб він виводив "Гав" до консолі. У функції main, створіть
+об'єкт класу Dog і викличте метод makeSound().
+#include <iostream>
+using namespace std;
+class Animal
+{
+public:
+    Animal() {}
+    void makeSound()
+    {
+        std::cout  <<" ___" << std::endl;
+    }
+};
+class Dog: public Animal
+{
+public:
+    Dog():Animal() {}
+    void makeSound()
+    {
+        std::cout  <<"Гав" << std::endl;
+    }
+int main()
+{   
+Animal animal;
+animal.makeSound();
+Dog dog;
+dog.makeSound();
+ return 0;
+}
+Задача 85 Урок №168. Приховування методів батьківського класу
+Задача: Створіть клас Vehicle з методом start(), який виводить "Транспортний засіб
+запущено" до консолі. Створіть клас Car, що наслідується від Vehicle, з власним
+методом start(), який виводить "Автомобіль запущено" до консолі. У функції main, 
+створіть об'єкти класів Vehicle та Car і викличте метод start() для кожного з них,
+щоб показати різницю у виведенні.
+#include <iostream>
+using namespace std;
+class Vehicle
+{
+public:
+    Vehicle() {}
+    void start()
+    {
+      std::cout  <<"Транспортний засіб запущено" << std::endl;
+    }  
+    
+};
+class Car: public Vehicle
+{
+public:
+    Car() : Vehicle() {}
+     
+    void start() = delete;
+};
+ class Printer
+ {
+ public:
+     Printer(){}
+     void print()
+     {
+         cout << "Дру..." <<endl;
+     }
+ };
+int main()
+{  
+Vehicle v;
+v.start();
+Car c;
+c.start();
+   return 0;
+}
+Задача 86 Урок №169. Множинне спадкування
+Задача: Створіть два базові класи: Printer, який має метод print(), що виводить 
+"Друк...", і Scanner, який має метод scan(), що виводить "Сканування...". Потім
+створіть клас MultifunctionPrinter, який успадковує обидва ці класи. У функції main,
+створіть об'єкт MultifunctionPrinter і викличте методи print() та scan(), щоб 
+продемонструвати множинне спадкування.
+#include <iostream>
+using namespace std;
+ class Printer
+ {
+ public:
+     Printer(){}
+     void print()
+     {
+         cout << "Дру..." <<endl;
+     }
+ };
+ class Scanner
+ {
+ public:
+    Scanner(){}
+    void scan()
+    {
+        cout << "Сканування..." <<endl;
+    }
+ };
+class MultifunctionPrinter:public Printer, public Scanner
+{
+
+};
+int main()
+{   
+MultifunctionPrinter m;
+m.scan();
+m.print();
+    return 0;
+}
+                                       ВІРТУАЛЬНІ ФУНКЦІЇ
+Задача 87  Базовий клас і похідний клас
+Мета: Вивчити основи віртуальних функцій.
+
+Опис: Створіть базовий клас Тварина з віртуальною функцією голос(). Потім створіть
+два похідні класи: Собака і Кіт, кожен з яких реалізує власну версію функції голос().
+У функції голос() для Собаки виведіть "Гав", а для Кіта - "Мяу". У головній функції 
+програми створіть об'єкти кожного з класів і викличте функцію голос() для них
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+class Animals
+{
+public:
+    virtual void speak()
+    {
+        std::cout << " " << std::endl;
+    }
+};
+class Dog:public  Animals
+{
+public:
+    virtual void speak()
+    {
+        std::cout <<"Собака говорить : "<< "Гав" << std::endl;
+    }
+};
+class Cat:public  Animals
+{
+public:
+    virtual void speak()
+    {
+        std::cout <<"Кіт говорить : "<< "Мяу" << std::endl;
+    }
+};
+
+int main()
+{
+Dog dog;
+dog.speak();
+Cat cat;
+cat.speak();
+
+return 0;
+}
+Задача 88  "Живописні стилі"
+Мета: Показати використання віртуальних функцій для реалізації різноманітної 
+функціональності у спадкоємних класах.
+Опис: Створіть базовий клас Живопис, що містить віртуальну функцію опишиСтиль(),
+яка просто виводить "Це універсальний стиль живопису". Створіть три похідні класи:
+Імпресіонізм, Кубізм, Сюрреалізм. У кожному з похідних класів перевизначте функцію
+опишиСтиль(), щоб вона виводила унікальне повідомлення для кожного стилю (наприклад,
+"Імпресіонізм прагне зафіксувати враження від моменту"). У головній функції програми
+створіть масив вказівників на базовий клас і ініціалізуйте їх об'єктами похідних класів
+, а потім в циклі викличте опишиСтиль() для кожного об'єкта.
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+class Painting
+{
+public:
+    virtual void describeStyle()
+    {
+        std::cout << "Це універсальний стиль живопису" << std::endl;
+    }
+};
+
+class Impressionism: public Painting
+{
+public:
+    virtual void describeStyle() override
+    {
+        std::cout << "Імпресіонізм прагне зафіксувати враження від моменту " << std::endl;
+    }
+};
+class Cubism: public Painting
+{
+public:
+    virtual void  describeStyle () override 
+    {
+        std::cout << "Цей стиль характеризується геометричною абстракцією" << std::endl;
+    }
+};
+class Surrealism: public Painting
+{
+public:
+    virtual void describeStyle() override
+    {
+        std::cout << "Сюрреалісти прагнули виражати нерозуміння, мрії, фантазії" << std::endl;
+    }
+};
+int main()
+{
+vector < Painting* > gallery;
+gallery.push_back(new Impressionism());
+gallery.push_back(new Cubism());
+gallery.push_back(new Surrealism());
+for(auto &Painting:gallery)
+{
+    Painting->describeStyle();
+}
+for(auto &Painting:gallery)
+{
+    delete Painting;
+}   
+    gallery.clear();
+    return 0;
+}
+                       КОНТРОЛЬНА"ВІРТУАЛЬНІ ФУНКЦІЇ+ШАБЛОНИ ПАPАМЕТРІВ ФУНКЦІЇ + ПЕРЕВАНТАЖЕННЯ
+                                              ОПЕРАТОРІВ"
+Задача 89 ### Задача: Система управління геометричними фігурами
+#### Опис задачі
+Розробіть програму для управління колекцією геометричних фігур. Кожна фігура повинна мати 
+можливість розрахунку площі та периметра. Система повинна підтримувати фігури такі як круги та 
+прямокутники. Крім того, програма повинна забезпечувати зберігання фігур у колекції (наприклад, 
+у векторі) та виведення інформації про всі фігури у колекції.
+#### Основні компоненти
+1. **Клас `Figure`** - базовий абстрактний клас для всіх геометричних фігур.
+ - Чисто віртуальні функції для розрахунку площі (`calculateArea`) та периметра 
+(`calculatePerimeter`).
+2. **Класи `Circle` та `Rectangle`** - похідні класи, які реалізують методи базового класу для 
+конкретних фігур.
+ - Використовують конструктори для ініціалізації.
+ - Мають приватні змінні (радіус, довжина, ширина) та публічні методи для їх доступу 
+(інкапсуляція).
+3. **Перевантаження операторів** - перевантажте оператор виводу (`<<`) для красивого виводу 
+інформації про фігури.
+4. **Статична змінна** - використовуйте статичну змінну у базовому класі для підрахунку 
+загальної кількості створених фігур.
+5. **Деструктори** - використовуйте деструктори у похідних класах для демонстрації їх виклику.
+6. **Вектори** - використовуйте `std::vector` для зберігання та управління колекцією фігур.
+#### Завдання для виконання
+1. Реалізуйте базовий клас `Figure` та похідні класи `Circle` та `Rectangle`.
+2. Реалізуйте конструктори для ініціалізації фігур з відповідними параметрами.
+3. Реалізуйте деструктори у похідних класах.
+4. Реалізуйте методи для розрахунку площі та периметра у кожному з похідних класів.
+5. Реалізуйте статичну змінну для підрахунку кількості створених фігур.
+6. Реалізуйте перевантаження оператора виводу для красивого представлення фігур.
+7. Створіть колекцію (використовуючи `std::vector`), додайте до неї декілька фігур та виведіть 
+інформацію про кожну фігуру, використовуючи перевантажений оператор виводу.
+#include <iostream>
+#include <vector>
+using namespace std;
+class Figure
+{
+public:
+    static int count;
+
+    Figure()
+    {
+        count++;
+    }
+    virtual double calculateArea() = 0;
+    virtual double calculatePerimeter() = 0;
+    friend ostream& operator <<(ostream& out,Figure &figure);
+};
+int Figure::count = 0;
+ 
+class Circle:public Figure
+{
+    double _r;
+public:
+    Circle(double r):_r(r)
+    {
+    }
+    virtual ~ Circle(){}
+     double calculateArea() override
+    {
+    return 3.14 * (_r * _r); 
+    }
+     double calculatePerimeter() override
+    {
+       return 2 * _r * 3.14;  
+    }
+    void setR(double r)
+    {
+        _r = r;    
+    }
+    double getR()
+    {
+        return _r;
+    }
+    friend ostream& operator <<(ostream& out,Circle &circle);
+   
+};
+ostream& operator << (ostream& out,Circle &circle)
+    {
+        out << "Площа кола :" << circle.calculateArea() << " cm;" <<endl;
+        out << "Периметер кола :" << circle.calculatePerimeter() << " cm;" << endl;
+        return out;
+    }
+
+class Rectangle:public Figure
+{
+    double _a;
+    double _b;
+    double _c;
+    double _d;
+public:
+    Rectangle(double a,double b, double c,double d):_a(a),_c(c),_b(b),_d(d){}
+     double calculateArea() override
+     {
+        return _a * _b; 
+     }
+    virtual ~ Rectangle()
+    {
+        
+    }
+     double calculatePerimeter() override
+    {
+        return _a + _b + _c + _d;     
+    }
+   void setA(double a)
+   {
+       _a = a;
+   }
+   void setB(double b)
+   {
+       _b = b;
+   }
+   void setC(double c)
+   {
+       _c = c;
+   }
+   void setD(double d)
+   {
+       _d = d;
+   }
+   double getA() 
+    {
+        return _a;     
+    }
+ 
+   double getB() 
+    {
+        return _b;     
+    }
+    double getC() 
+    {
+        return _c;     
+    }
+     double getD() 
+    {
+        return _d;     
+    }
+    friend ostream& operator <<(ostream& out,Rectangle &rectangle);
+};
+ostream& operator << (ostream& out,Rectangle &rectangle)
+{
+    out << "Площа прямокутника :" << rectangle.calculateArea() << " cm;" <<endl;
+        out << "Периметер прямокутника :" << rectangle.calculatePerimeter() << " cm;" << endl;
+    return out;
+}
+int main()
+{
+std::vector < Figure* > figure ;
+
+Circle circle(4.5);
+cout << Circle::count << " Фігура коло :" << endl;
+figure.push_back (new Circle (circle));
+cout<<circle;
+
+Rectangle rectangle {4.5, 2.0, 6.2, 45.2};
+cout <<Rectangle::count <<  " Фігура   прямокутник: "<<endl;
+figure.push_back (new Rectangle (rectangle)); 
+cout<<rectangle; 
+ 
+for(auto &Figure:figure)
+{
+    delete Figure;
+} 
+
+    figure.clear();   
+    return 0;
+}
+
+
+
+
+
+
+
+
+                                            ВИНЯТКИ
+Задача 90 Перетворення рядка у число":
+Напишіть програму, яка запитує у користувача рядок і намагається перетворити його
+в ціле число за допомогою std::stoi. Використайте блок try-catch для обробки винятків,
+які можуть виникнути при перетворенні (наприклад, якщо рядок не може бути перетворений у число). 
+У випадку винятку виведіть повідомлення "Некоректний ввід". 
+include <iostream>
+ #include <string>
+ using namespace std;
+int main()
+{
+string a;
+cout << "введіть рядок" << endl;
+cin >> a;
+
+ try
+     {
+        int i_dec = std::stoi (a); 
+     }
+    catch (...)
+    {  
+        std::cout << "Error!" << std::endl;
+    }
+        std::cout << "The End..." << std::endl;
+return 0;
+}
+Задача 91 Урок №190. Обробка винятків. Оператори throw, try і catch
+Задача: Напишіть програму, яка просить користувача ввести два числа, ділить одне 
+на друге, кидає виняток, якщо друге число є нулем, і обробляє цей виняток.
+#include <iostream>
+using namespace std;
+ double divisionnumbers(double num1,double num2)
+ {
+    if(num2==0)
+    throw "MY ERROR";
+    double result =  num1/num2;
+    return result;
+ }
+int main()
+{
+std::cout << "Введіть два  числа :" << std::endl;
+double number1;
+double number2;
+cin >> number1 >> number2;
+ try
+    {
+        double z = divisionnumbers(number1, number2);
+        std::cout << z << std::endl;
+    }
+    catch (const char* exception)
+    {
+        std::cout << exception << std::endl;
+    }
+return 0;
+}
+Задача 92  Простий клас-виняток
+Завдання: Створіть клас винятку DivisionByZeroException, який використовується 
+для обробки спроби ділення на нуль. Програма повинна запитувати у користувача два 
+числа, ділити одне на друге, і використовувати цей клас для генерації винятку, якщо 
+друге число є нулем.
+#include <iostream>
+#include <string>
+using namespace std;
+
+ return 0;
+}
+Задача 93    
+Простий клас-виняток
+Завдання: Створіть клас винятку DivisionByZeroException, який використовується 
+для обробки спроби ділення на нуль. Програма повинна запитувати у користувача два 
+числа, ділити одне на друге, і використовувати цей клас для генерації винятку, якщо друге число є нулем.
+#include <iostream>
+#include <string>
+using namespace std;
+                                                КЛАСИ
+ЗАДАЧА 94
+ /*Створіть клас Book в C++, який містить наступні поля:
+
+title (назва книги) - рядок (string).
+author (автор книги) - рядок (string).
+year (рік видання) - ціле число (int).
+Клас повинен мати:
+
+Конструктор за замовчуванням, який ініціалізує назву і автора пустими рядками, 
+а рік видання - нулем.
+Конструктор з параметрами для ініціалізації всіх трьох полів.
+Методи-аксесори (getters) для кожного з полів.
+Методи-модифікатори (setters) для кожного з полів.
+Створіть декілька об'єктів класу Book у функції main, ініціалізуйте їх через конструктор
+з параметрами і виведіть інформацію про книги за допомогою методів-аксесорів.*/
+#include <iostream>
+#include <string>
+using namespace std;
+// class Book
+// {
+//     std::string _title;
+//     std::string _author;
+//     int _year;
+// public:
+//     Book(): _title(" "),_author(" "),_year(0){}  
+//     Book(std::string title, std::string author, int year): _title(title),_author(author),_year(year){}
+    
+//     std::string getTitle()
+//     {
+//         return _title;
+//     }
+//      std::string getAuthor()
+//     {
+//         return _author;
+//     }
+//     int getYear()
+//     {
+//         return _year;
+//     }
+    
+//     void setTitle(std::string title)
+//     {
+//         _title=title;
+//     }
+//     void setAuthor(std::string author)
+//     {
+//         _author = author;
+//     }
+//     void setYear(int year)
+//     {
+//          _year = year;
+//     }    
+// };
+int main() {
+ Book b("Чорна вдова", "Петренко В.П.", 2003);
+ std::cout <<"назва книги: \n"<<  b.getTitle() <<" \nавтор книги: " <<b.getAuthor()<< " \nрік видання: " <<b.getYear() << std::endl;
+ Book f("Колоскове поле", "Сидоренко А.О.", 2008);
+std::cout <<" назва книги: \n"<<  f.getTitle() <<" \nавтор книги: " <<f.getAuthor()<< " \n рік видання: " <<f.getYear() << std::endl;
+return 0;
+}
+ЗАДАЧА 95
+/*Створіть клас Clock в C++, який використовується для відслідковування часу в 
+годинах і хвилинах. Клас повинен мати наступні характеристики:
+
+Приватні члени класу:
+hour (години) - ціле число від 0 до 23.
+minute (хвилини) - ціле число від 0 до 59.
+Публічні методи:
+Конструктор за замовчуванням, який ініціалізує час 00:00.
+Конструктор з параметрами, що приймає години і хвилини.
+Метод setTime(int hour, int minute), який встановлює час, при цьому перевіряючи
+коректність введених значень (години від 0 до 23, хвилини від 0 до 59).
+Методи getHour() і getMinute(), які повертають відповідно години і хвилини.
+Метод addMinute(), який додає одну хвилину до часу. Якщо хвилини становлять 59, 
+то вони повинні обнулитись, а година збільшитись на одиницю (при цьому, якщо година
+була 23, вона стає 0).
+
+Створіть декілька об'єктів класу Clock у функції main, встановіть їм час через 
+конструктор із параметрами, змініть час через setTime, використайте addMinute для 
+збільшення часу та виведіть результати за допомогою методів-аксесорів.*/
+#include <iostream>
+#include <string>
+
+using namespace std;
+class Clock
+// {
+//   int _hour;
+//   int _minute; 
+// public:
+//   Clock():_hour(00), _minute(00) {} 
+//   Clock(int hour, int minute ):_hour(hour), _minute(minute) {}
+   
+//   int setTime(int hour, int minute)
+//   {
+//       if(hour >=0 && hour <= 23 && minute >= 0 && minute <= 59 )
+//       {
+//             _hour = hour;
+//             _minute = minute;
+//       }
+//       else 
+//             cout << " Не коректне значення!!! правельне значення для   hour 0...23 та minute 0...59 " << endl;
+//             return -1;     
+//   }
+//     int getHour()
+//     {
+//         return _hour;
+//     }
+//     int getMinute()
+//   {
+//       return _minute;
+//   }
+//   void addMinute()
+//   {
+//         if(_minute == 59 || _hour != 23)
+//         {
+//             ++_hour;
+//             _minute=0;
+//         } else if (_minute == 59 || _hour == 23){
+//             _hour = 0;
+//             _minute = 0;
+//         } else {
+//             _hour = _hour + 1;
+//             _minute = _minute + 1;
+//         }
+//     }
+// };
+int main() {
+/ Clock casio(9,00);    //Встановили час об'єкта casio
+// casio.setTime(02,59); // Змінив час об'єкта casio
+// std::cout <<"ГОДИННИК CASIO ЗАДАНИЙЙ ЧАС\n"<<"годин "<< casio.getHour() << " : " << casio.getMinute()<<" хвилин"  << std::endl;
+// casio.addMinute();   // Збільшив час об'єкта casio
+// std::cout <<"ГОДИННИК CASIO ЗБІЛЬШЕНИЙ ЧАС\n"<<"годин "<< casio.getHour() << " : " << casio.getMinute()<<" хвилин"  << std::endl;   
+// std::cout << "-------------------------------------------------------------------------" << std::endl;
+// Clock orient(11,00);
+// orient.setTime(11,59);
+// std::cout <<"ГОДИННИК ORIENT ЗАДАНИЙЙ ЧАС\n"<<"годин "<< orient.getHour() << " : " << orient.getMinute()<<" хвилин"  << std::endl;
+// orient.addMinute();
+// std::cout <<"ГОДИННИК ORIENT ЗБІЛЬШЕНИЙ ЧАС\n"<<"годин "<< orient.getHour() << " : " << orient.getMinute()<<" хвилин"  << std::endl;
+return 0;
+}
+ 
+                                             МЕТОДИ #include <string>
+
+задача 96: Перевірка на порожній рядок
+Мета: Використати метод empty() для перевірки, чи є рядок порожнім.
+Умова: Даний рядок s. Потрібно написати функцію, яка повертає true, якщо рядок 
+порожній, та false в іншому випадку.
+*/
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() 
+{
+std::string v = "Petya";
+cout <<stringEmpty(v) << endl;
+ return 0;
+}
+
+
+задача 97: Робота з ємністю рядка
+Мета: Вивчити використання методів capacity() та reserve().
+Умова: Модифікувати ємність рядка і вивести її значення перед і після модифікації.
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+int main() 
+{
+cout << v.capacity() << endl;
+ v.reserve(10);
+ return 0;
+}
+
+задача 98: Додавання та вставка символів
+Мета: Показати роботу методів push_back() і insert().
+Умова: Додати символ в кінець рядка, а потім вставити символ в середину рядка.*/
+#include <iostream>
+#include <string>
+using namespace std;
+int main() 
+{
+v.insert(v.length()-2, "&");
+cout << v << endl;
+v.push_back('T');
+cout << v << endl;
+ return 0;
+}
+
+							ФУНКЦІОНАЛ std::string
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main() 
+{
+задача 99 : Перевірка на порожній рядок
+Мета: Використати метод empty() для перевірки, чи є рядок порожнім.
+Умова: Даний рядок s. Потрібно написати функцію, яка повертає true, якщо рядок 
+порожній, та false в іншому випадку.
+
+std::string v = "Petya";
+cout <<stringEmpty(v) << endl;
+/*
+Задача 100 : Робота з ємністю рядка
+Мета: Вивчити використання методів capacity() та reserve().
+Умова: Модифікувати ємність рядка і вивести її значення перед і після модифікації.
+cout << v.capacity() << endl;
+ v.reserve(10);
+
+Задача 101 : Додавання та вставка символів
+Мета: Показати роботу методів push_back() і insert().
+Умова: Додати символ в кінець рядка, а потім вставити символ в середину рядка.*/
+v.insert(v.length()-2, "&");
+cout << v << endl;
+v.push_back('T');
+cout << v << endl;
+
+Задача 102: Напишіть програму, яка виводить довжину рядка std::string та std::wstring.*/
+string a = "Vasya";
+std::cout << a.length() << std::endl;
+
+Задача 103 : Створіть std::string з C-style рядка і виведіть його.*/
+const  char* v = "Hello";
+cout << v << endl;
+
+Задача 104:  Напишіть програму, яка створює std::string, виводить його довжину та ємність,
+а потім змінює розмір рядка, додаючи до нього кілька символів, і знову виводить довжину та ємність.*/
+cout << a.length() <<endl;
+cout << a.capacity() <<endl;
+a.resize(7);
+cout << a.length() <<endl;
+cout << a.capacity() <<endl;
+
+Задача 105 : Напишіть програму, яка отримує доступ до певного символу в std::string за допомогою at() та [], а потім конвертує std::string в C-style рядок.*/
+string y = "world";
+cout << y.at(0) << endl;
+cout << y [1] << endl;
+const char* c_str = y.c_str() ;
+cout << c_str << endl;
+
+Задача 106:  Напишіть програму, яка присвоює один std::string іншому, а потім міняє місцями значення двох std::string.*/
+string i = "d";
+string j = "l";
+cout << i << endl;
+cout << j << endl;
+i.swap(j);
+cout << i << endl;
+cout << j << endl;
+
+Задача 107:  Напишіть програму, яка вставляє підрядок у std::string на певній позиції.*/
+string str = "Vitalya";
+string str1 = "Ivanov";
+str.insert(str.length(),str1);
+cout << str << str1 << endl;
+Задача 108: Напишіть програму, яка додає рядок та символ до std::string.*/
+str1.push_back('f');
+cout<< str1 << endl;
+
+return 0;
+}
+                                                                                                          ФАЙЛ ВВІД ТА ВИВІД ДАНИХ
+#include <iostream>
+#include <string>
+using namespace std;
+int main() 
+{
+Задача 109 : Напишіть програму, яка запитує в користувача його ім'я та записує його 
+в текстовий файл user_name.txt.
+
+ cout << "Введіть своє ім'я _" << endl;
+ string name;
+std::cin >> name;
+ofstream fls1("user_name.txt");
+ 
+     if (!fls1) {
+       cout << "Error!";
+         exit(1);
+ }
+  fls1 << name << endl;
+
+Задача 110: Читання даних з файлу
+Завдання: Створіть текстовий файл з декількома рядками тексту. Напишіть програму, 
+яка читає цей файл і виводить його вміст на екран.*/
+  ifstream ofls1("D"); 
+  while (ofls1) {
+        string str1;
+        //ofls1 >> str1;
+        getline(ofls1, str1);
+        cout << str1 << endl;
+ }
+Задача 111: Додавання тексту до існуючого файлу
+Завдання: Напишіть програму, яка дозволяє користувачу вводити строки тексту і додає ці строки в кінець існуючого файлу append.txt, не видаляючи його попередній вміст.
+*/
+string txt;
+cin >> txt;
+
+ ofstream fls2("D",ios::app);
+    
+    if (!fls2) {
+        cout << "Error!";
+        exit(1);
+    }
+    
+    fls2 << txt << endl;  
+return 0;
+}
+Задача 112   /*Завдання 1: Запис студентської інформації
+Мета: Створити структуру Student та записати дані студентів у файл.
+
+struct Student {
+    string name;
+    int age;
+    double gpa;
+};
+Задача:
+Створити масив з трьох студентів.
+Запросити користувача ввести дані для кожного студента.
+Записати дані студентів у текстовий файл.*/
+#include <iostream>
+#include <string>
+using namespace std;
+struct Student {
+    string name;
+    int age;
+    double gpa;
+};
+
+int main() 
+{
+ const int NUM_STUDENTS = 3;  // Кількість студентів
+//  Student students[NUM_STUDENTS];
+//  // Запит даних в користувача
+//     for (int i = 0; i < NUM_STUDENTS; i++) {
+//         cout << "Enter information for student " << (i + 1) << endl;
+//         cout << "Name: ";
+//         getline(cin, students[i].name);  // Використовуємо getline для читання повного імені
+//         cout << "Age: ";
+//         cin >> students[i].age;
+//         cout << "GPA: ";
+//         cin >> students[i].gpa;
+//         cin.ignore();  // Очищуємо буфер вводу
+//     }
+
+//     // Відкриваємо файл для запису
+//     ofstream outFile("students.txt");
+//     if (!outFile) {
+//         cerr << "Error opening file." << endl;
+//         return 1;
+//     }
+
+//     // Записуємо дані у файл
+//     for (const auto& student : students) {
+//         outFile << "Name: " << student.name << ", Age: " << student.age << ", GPA: " << student.gpa << endl;
+//     }
+
+//     // Закриваємо файл
+//     outFile.close();
+
+//     cout << "Data has been written to file." << endl;
+
+return 0;
+}
+
+
+
+Задача 112 /*Завдання: Запис інформації про працівників компанії
+Мета: Створити структуру Employee та записати дані працівників компанії у файл.
+
+struct Employee {
+    string name;
+    string department;
+    int id;
+    double salary;
+};
+
+Задача:
+
+Створити масив з п'яти працівників.
+Запросити користувача ввести дані для кожного працівника (ім'я, відділ, ідентифікаційний номер, заробітну плату).
+Записати дані працівників у текстовий файл у наступному форматі: Name: [name], Department: [department], ID: [id], Salary: [salary].
+Відобразити повідомлення про успішний запис у файл.*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Employee {
+    string name;
+    string department;
+    int id;
+    double salary;
+};
+int main() 
+{
+const int N_employee = 5;
+Employee employees[N_employee];
+for (int i = 0; i < N_employee; i++ )
+{
+    cout <<  "Enter information for  employee" << (i + 1) << endl;
+     cout << "Name: ";
+        getline(cin, employees[i].name);  // Використовуємо getline для читання повного імені
+        cout << "department: ";
+        cin >> employees[i].department;
+        cout << " id: ";
+        cin >> employees[i].id;
+         cout << "salary: ";
+        cin >> employees[i].salary;
+        cin.ignore();  // Очищуємо буфер вводу
+}
+ // Відкриваємо файл для запису
+    ofstream outFile1("employee.txt");
+    if (!outFile1) {
+        cerr << "Error opening file." << endl;
+        return 1;
+    }
+    // Записуємо дані у файл
+    for (const auto& employee : employees) {
+        outFile1 << "Name: " << employee.name << ",department : " << employee.department << ", id: " << employee.id << ", salary: "<< employee.salary << endl;
+    }
+     // Закриваємо файл
+    outFile1.close();
+
+    cout << "Data has been written to file." << endl;
+return 0;
+}
+Задача 113 /*Завдання 3: Оновлення інформації про продукт
+Мета: Створити структуру Product і оновити інформацію про продукт у файлі.
+
+struct Product {
+    string name;
+    double price;
+    int quantity;
+};
+
+Задача:
+
+Прочитати список продуктів з файлу.
+Запросити користувача ввести нову ціну і кількість для конкретного продукту.
+Оновити файл із новою інформацією про продукти. */
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+struct Product {
+    string name;
+    double price;
+    int quantity;
+};
+
+
+int main() 
+{
+	Product product {"цукерка", 147.50,50};
+ 	// Відкриваємо файл для запису
+    	ofstream outFile("product.txt");
+    	if (!outFile) 
+    	{
+        	cerr << "Error opening file." << endl;
+        	return 1;
+    	}
+// Записуємо дані у файл
+        outFile << "Name product : " << product.name << ", price = " << product.price << ", quantit = " << product.quantity<< endl;
+// Запит даних в користувача
+    
+        cout << "Enter information for student " << endl;
+        cout << "Name: ";
+        getline(cin, product.name);  // Використовуємо getline для читання повного імені
+        cout << "price: ";
+        cin >> product.price;
+        cout << "quantity: ";
+        cin >> product.quantity;
+        cin.ignore();  // Очищуємо буфер вводу
+    
+    	ofstream fls1("product.txt",ios::app);
+ 
+     	if (!fls1) 
+	{
+       		cout << "Error!";
+         	exit(1);
+ 	}
+	fls1 << "Name product: " << product.name << ", price = " << product.price << ", quantit = " << product.quantity<< endl;
+return 0;
+}
+
+                                                             
+
+
+
+                                                                           БІНАРНИЙ ПОШУК
+
+
+Задача 114 /*Напишіть програму яка створює масив з 10 випадкових елементів.
+Користувач вводить число. 
+Знайти це число в масиві за допомогою бінарного пошуку*/  
+#include <iostream>
+using namespace std;
+int binarySearch(int arr[], int low, int high, int x)
+{
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] == x)
+            return mid;
+        if (arr[mid] < x)
+            low = mid + 1;
+        else
+            high = mid - 1;
+    }
+    return -1;
+}
+int main()
+{
+// бінарний
+ int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+ cout << "введіть число :" << endl;
+    int x;
+    cin >> x;
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int result = binarySearch(arr, 0, n - 1, x);
+    (result == -1)
+? cout << "Елемент не знайдемо"
+: cout <<"Елемент знайдено :" << result1 << endl;
+
+return 0;
+}
+                                         ЛІНІЙНИЙ ПОШУК
+
+адача 115 /*Напишіть програму яка створює масив з 10 випадкових елементів.
+Користувач вводить число. 
+Знайти це число в масиві за допомогою бінарного пошуку*/ 
+#include <iostream>
+
+using namespace std;
+
+int search(int arr[], int N, int x)
+{
+for(int i = 0; i < N; i++)
+{
+   if (arr[i] == x)
+   return i;
+}
+return -1;
+}
+int main()
+{
+
+// лінійний
+int array[] = {2,5,3,4,5,7,8,25,30,10};
+cout << "введіть число :" << endl;
+int number;
+cin >> number;
+int n = sizeof(array) / sizeof(array[0]);
+int result1 = search (array, n, number);
+  (result1 == -1)
+  ? cout << "Елемент не знайдемо"
+  : cout <<"Елемент знайдено :" << result1 << endl;
+    return 0;
+}
+                                               СОРТУВАННЯ ВСТАВКОЮ РЯКІВ
+Задача 116
+#include <iostream>
+#include <string>
+using namespace std;
+// Сортування масиву
+void selectionSort(string arr[], int n)
+{
+    int  min_idx; string temp;
+    for (int k = 0; k < n - 1; k++)
+    {
+        min_idx = k;
+        for (int j = k + 1; j < n; j++)
+        {
+            if (arr[j] < arr[min_idx])
+                min_idx = j;
+        }
+        if (min_idx != k)
+           temp =  arr[min_idx];
+        arr[min_idx] = arr[k];
+       arr[k] = temp;
+    }   
+        
+}
+// Вивід інформації на екран
+void print(string arr[], int n)
+{
+    for (auto i = 0; i < n; i++)
+        cout << arr[i] << " " << "";
+}
+int main()
+{
+int len = 10;
+string arrayS[10] = { "Перший","Другий"," Четвертий ","Третій","П'ятий","Сьомий","Шостий","Восьмий","Десятий","Дев'ятий" };  
+cout << "оригінальний масив: " << endl;
+print(arrayS,len);
+cout << "'\n'відсортований масив: " << endl;
+selectionSort(arrayS,len);
+print(arrayS, len);
+    return 0;
+}
+
+                                       СТРУКТУРИ
+Задача 117
+ /*
+     **Книгарня**: Створіть структуру `Book`, яка зберігає назву книги, автора, ціну та кількість на складі. Напишіть функції для додавання книг,
+     видалення книг і пошуку книги за автором.
+    */
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+//**Книгарня**:
+// struct Book
+// {
+//     string name;              // назву книги
+//     string author;            // ім'я автора
+//     int quantity_in_stock;    // кількість на складі
+//     double price;             // ціну книги
+    
+// };
+// //функція для додавання книг
+// int addingBooks (Book b, int  number)
+// {
+//     return b.quantity_in_stock + number;
+// }
+// //функція для видалення книг
+// int deletingBooks (Book b, int  number)
+// {
+//     return b.quantity_in_stock - number;    
+// }
+// //функція пошуку книги за автором
+// void bookSearch (Book b,string name)
+// {
+//     if (b.author == name)
+//         cout << "Книга зберігається на складі ,'\n"<< "ЇЇ назва :" << b.name  << endl;
+//     else 
+//         cout << "Книги з таким ім'ям автора на складі не зберігається " << endl;
+// }
+int main() 
+{
+  // Book book = {" Чорний лебідь ", "Насім Таллеб", 50, 250.50};
+    // cout << "Склад зберігає " << book.quantity_in_stock  << "шт. книг" <<endl;
+    // int addBook;
+    // cout << "Вкажіть скільки бажаєте додати книг до складу: " << endl;
+    // cin >> addBook;
+    // cout << "Тепер на складі  зберігається  " << addingBooks(book, addBook) << "шт. книг" << endl;
+    // cout << "-------------------------------------------------------------------------------------" << endl;
+    
+    // int deleteBook;
+    // cout << "Вкажіть скільки бажаєте забрати  книг зі складу: " << endl;
+    // cin >> deleteBook;
+    // cout << "Тепер на складі  зберігається " << deletingBooks ( book, deleteBook) << "шт. книг" << endl;
+    // cout << "-------------------------------------------------------------------------------------" << endl;
+    // std::cin.ignore(32767, '\n');
+    // string  nameAuthor;
+    // getline(cin,  nameAuthor);
+    // bookSearch (book,  nameAuthor);
+return 0;
+}
+Задача 118
+/*2. **Керування банківськими рахунками**: Створіть структури `Account`, які зберігають номер рахунку, ім'я власника та баланс. 
+    Напишіть програму для внесення та зняття коштів, а також для перевірки балансу.*/
+#include <iostream>
+#include <string>
+using namespace std;
+**Керування банківськими рахунками**:
+// struct Account
+// {
+//     double  account_number;  //номер рахунку     
+//     string proprietor;    // ім'я власника
+//     double balance;       // баланс
+// };
+// // функція внесення та зняття коштів
+// void depositingWithdrawingFunds (Account &a, double money, char ch)
+// {
+//     if (ch == 'd')                       // умова при якій кошти зарахуються на рахунок
+//         a.balance = a.balance + money;
+//     else if (ch == 'w')                  //Умова при якій кошти можна зписати з рахунку
+//         a.balance = a.balance - money;
+//     else
+//         cout << "!!Помилка!! натисніть : d - щоб внесети кошти; w -щоб зняти кошти" << endl;
+// }
+int main() 
+{
+Account аccount = {12345678910.0, "Янцевич І С",1000.0};
+    // cout << "власник :"  << аccount.proprietor <<  "\n " << "баланс = " << аccount.balance << "грн." << endl;
+    // double sum;
+    // cout << "Вкажіть суму коштів" << endl;
+    // cin >> sum;
+    // cout << "Виберіть дію : d - щоб внесети кошти; w -щоб зняти кошти" << endl;
+    // char action;
+    // cin >>  action;
+    // depositingWithdrawingFunds (аccount, sum, action );
+    // cout << "власник :"  << аccount.proprietor <<  "\n " << "баланс = " << аccount.balance << "грн." << endl;
+return 0;
+}
+
+Задача 119
+      /***Система для резервації готелів**: Створіть структуру `HotelRoom`, що зберігає номер кімнати, тип кімнати (одномісна, двомісна, люкс) та 
+    статус зайнятості.Розробіть систему для бронювання та звільнення кімнат.*/
+
+**Система для резервації готелів**:
+// struct HotelRoom 
+// {
+//     int room_number; 
+//     string room_type;
+//     string status;
+// };
+// // Всі кімнати  готелю та короткий опис
+//  void allRoomsOfTheHotel()
+// {
+//     int arra_nmbers[15];
+//     int len = sizeof(arra_nmbers) / sizeof(arra_nmbers[0]);
+//     for (int i = 0; i <= len; i++)
+//     {
+//         arra_nmbers[i] = i+1;
+//         cout << " Кімната № " << arra_nmbers[i] << " ";
+//         if (arra_nmbers[i] <= 5)
+//             cout << "одномістні   вид з вікна - будівництво супемаркету" << endl;
+//         else if (arra_nmbers[i] >= 6 && arra_nmbers[i] <= 10 )
+//             cout << "двоміснамістні  вид з вікна - на цегяну стіну   " << endl;
+//         else if (arra_nmbers[i] >= 10 && arra_nmbers[i] <= 15 )
+//             cout  << "люкс   вид з тираси  - на океан " << endl;    
+//     }
+// }
+// //Статус кімнат
+// void roomStatus ( HotelRoom &h)
+// {
+//     int arra_nmbers[15];
+//     int len = sizeof(arra_nmbers) / sizeof(arra_nmbers[0]);
+//     for (int i = 0; i <= len; i++)
+//     { 
+//         arra_nmbers[i] = i;
+//         if(arra_nmbers[i] % 2 != 0) 
+//             cout << " Кімната № " << arra_nmbers[i] << " - вільна" << endl;
+//         if(arra_nmbers[i] % 2 == 0) 
+//             cout << " Кімната № " << arra_nmbers[i]<< " - зайнята" << endl;
+//     }
+// }
+//  void reserveARoom(HotelRoom &h)
+//  {
+//     int arra_numbers[15];
+//     int len = sizeof(arra_numbers) / sizeof(arra_numbers[0]);
+
+//     // Ініціалізація масиву номерами кімнат від 1 до 15
+//     for (int i = 0; i < len; i++) 
+//     {
+//         arra_numbers[i] = i + 1;
+//     }
+
+//     bool found = false; //потрібна щоб відстежувати, чи було знайдено номер кімнати h.room_number у масиві arra_numbers.
+//                         //значення false розуміємо що номер в масиві не знайдено
+
+//     // Перевірка номера кімнати
+//     for (int j = 0; j < len; j++) 
+//     {
+//         if (arra_numbers[j] == h.room_number) // Якщо номер кімнати дорівнює h.room_number
+//         { 
+//             found = true;
+//             break;
+//         }
+//     }
+//     if (found) 
+//     {
+//         if (h.room_number % 2 != 0)// Якщо номер кімнати непарний 
+//         {   h.status = "ЗАБРОНЬОВАНО";
+//             cout  << h.status <<" - " << h.room_number  << "кімнату" << endl;
+//         } 
+//         else  // Якщо номер кімнати парний
+//         {
+//             cout << "УПС!   кімната вже зайнята " << endl;      
+//         }
+//     } 
+//     else 
+//     {
+//         cout << "Номер кімнати не знайдено" << endl; // Якщо номер кімнати не знайдено в масиві
+//     }
+// }
+// void roomVacancy(HotelRoom &h)
+// {
+//  int arra_numbers[15];
+//     int len = sizeof(arra_numbers) / sizeof(arra_numbers[0]);
+
+//     // Ініціалізація масиву номерами кімнат від 1 до 15
+//     for (int i = 0; i < len; i++) 
+//     {
+//         arra_numbers[i] = i + 1;
+//     }
+
+//     bool found = false; //потрібна щоб відстежувати, чи було знайдено номер кімнати h.room_number у масиві arra_numbers.
+//                         //значення false розуміємо що номер в масиві не знайдено
+
+//     // Перевірка номера кімнати
+//     for (int j = 0; j < len; j++) 
+//     {
+//         if (arra_numbers[j] == h.room_number) // Якщо номер кімнати дорівнює h.room_number
+//         { 
+//             found = true;
+//             break;
+//         }
+//     }
+//     if (found) 
+//     {
+//         if (h.room_number % 2 == 0)// Якщо номер кімнати непарний 
+//         {   h.status = "Звільнено";
+//             cout  << h.status <<" - " << h.room_number << " кімнату" << endl;
+//         } 
+//          else  // Якщо номер кімнати парний
+//          {
+//              cout << "УПС!   Щось пішло не так! спробуйте ще... " << endl;      
+//         }
+//     } 
+//     else 
+//     {
+//         cout << "Номер кімнати не знайдено" << endl; // Якщо номер кімнати не знайдено в масиві
+//     }
+    
+// }
+int main() 
+{
+
+ // HotelRoom avrora ;
+    // // Вибір опцій
+    //   while (true)
+    // {
+    //     cout << "---------------Вас вітає готель Avrora---" << endl;
+    //     int option;
+    //     cout << "Ви можете скористатися нашими послугами: " << endl;
+    //     cout << "1. Показати всі кімнати " << endl;
+    //     cout << "2. Переглянути статус кімнат у готелі: " << endl;
+    //     cout << "3. Забронювати кімнату" << endl;
+    //     cout << "4. Звільнити кімнату" << endl;
+    //     cout << "5. Вийти" << endl;
+    //     cout << "Виберіть опцію: ";
+    //     cin >> option;
+    //     switch (option) 
+    //     {
+    //         case 1:
+    //             allRoomsOfTheHotel();  
+    //             break;
+    //         case 2:
+    //             cout << "Ось будьласка актуальний список статусу зайнятості на червень місяць: ";
+    //             roomStatus (avrora);
+    //             break;
+    //         case 3:
+    //             cout << "Щоб забронювати :'\n'" << endl;
+    //             cout << "Введіть тип кімнати:"  << " ";
+    //             cin >> avrora.room_type;
+    //             cout << "Введіть номер кімнати:"  << " ";
+    //             cin >> avrora.room_number;
+    //             reserveARoom(avrora);
+    //             break;
+    //         case 4:
+    //             cout << "Введіть номер кімнати для звільнення: ";
+    //             cout << "Введіть номер кімнати:"  << " ";
+    //             cin >> avrora.room_number;
+    //             roomVacancy(avrora);
+    //             break;
+    //         case 5:
+    //             return 0;
+    //         default:
+    //             cout << "Невірний вибір. Спробуйте ще раз." << endl;
+    //     }
+    // }    
+
+return 0;
+}
+Задача 120
+/*4. **Погодні дані**: Створіть структуру `WeatherRecord`, що зберігає дату, температуру, вологість і кількість опадів. Реалізуйте функції для 
+обрахунку середньої температури та найвищої вологості за місяць.
+*/
+#include <iostream>
+#include <string>
+using namespace std;
+
+ //**Погодні дані**:
+struct WeatherRecord
+{
+    int day;
+    int month;
+    int year;
+    double temp;
+    double average_temperature;
+    int highest_humidity;
+};
+//функція для обрахунку середньої температури
+void averageTemperature( WeatherRecord &w)
+{
+    srand(time(NULL));
+    int array[ w.day]; 
+    double sum; // зберігаємо тут сумму всіх елементів у масиві array[ w.day]
+    for(int i = 1; i <= w.day; i++)
+    {
+        array[i] = 0 + rand() % (20 + 20);
+        sum = sum += array[i];
+        w.average_temperature = sum / w.day ;
+    }
+    
+cout << "Середня температура повітря  протягом місяця:" << w.average_temperature << " C " << endl;   
+}
+//функція для обрахунку найвищої вологості за місяць.
+void highestHumidity( WeatherRecord &w)
+{
+    int max = 0;
+   srand(time(NULL));
+   int array1[w.highest_humidity];
+   for(int i = 0; i <= w.highest_humidity;i++)
+  { 
+       array1[i] = 0 + rand() % (50 + 51);
+       if(array1[i] > max)
+       {
+        max =  array1[i];   
+       }
+      
+   }
+    cout << "Найвища вологість повітря протягом місяця = " << max << " %" << endl;
+}
+int main() 
+{
+WeatherRecord weatherRecord;
+weatherRecord.day = 31;
+averageTemperature( weatherRecord);
+weatherRecord.highest_humidity = 100;
+highestHumidity(weatherRecord);
+return 0;
+}
+Задача 121
+  /*
+    1. **Зберігання інформації про студента**: Створіть структуру `Student`, що зберігає ім'я, вік та середній бал. Напишіть програму, яка запитує дані
+    про студента, зберігає їх у структуру та виводить на екран.
+    */
+#include <iostream>
+#include <string>
+using namespace std;
+//**Зберігання інформації про студента**:
+struct Student
+{
+    string name;
+    int age;
+    double GPA;
+};
+ void display_on_screen(Student student)
+{
+    cout << "Name : " << student.name << endl; 
+    cout << "Age : " << student.age << endl;
+    cout << "GPA : " << student.GPA << endl; 
+}
+int main() 
+{
+ Student student;
+    cout << "ВВедіть дані студента: " << endl;
+    getline(cin, student.name);
+    cout << "ВВедіть вік: " << endl;
+    cin >> student.age;
+    cout << "ВВедіть свій середній бал: " << endl;
+    cin >> student.GPA;
+    cin.ignore();
+    display_on_screen(student);
+return 0;
+}
+Задача 122
+ /***Колір RGB**: Створіть структуру `Color`, що зберігає значення кольорів RGB (червоний, зелений, блакитний). Напишіть функцію, яка приймає два
+    кольори та повертає середнє значення кольору.*/
+    //Значення кольору від 0...до 255
+#include <iostream>
+#include <string>
+using namespace std;
+//**Колір RGB**:
+struct Color
+{
+    int red;
+    int green;
+    int blue;
+    Color(int r, int g, int b) : red(r), green(g), blue(b) {}
+};
+Color averageColorValue(Color color_1,Color color_2 )
+{
+    
+    int R_avg = (color_1.red + color_2.red)/2;
+    int G_av = (color_1.green + color_2.green)/2;
+    int B_avg = (color_1.blue + color_2.blue)/2;
+    return Color (R_avg,G_av,B_avg);
+}
+int main() 
+{
+    Color yellow = {55,55,55};
+    Color white = {255,50,125};
+    Color avgColor =  averageColorValue(yellow, white);
+    cout << "Середнє значення кольору  (" << avgColor.red <<", " << avgColor.green << ", " << avgColor.blue << ") " << endl;
+return 0;
+}
+Задача 123
+  /*3. **Простий записник**: Створіть структуру `Note`, що зберігає інформацію про назву, автора і рік публікації. Напишіть програму, що 
+    дозволяє створювати нові записи та виводити їх на екран.*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+struct  Note
+{
+    string title;
+    string author;
+    int year;
+};
+int main() 
+{
+ Note note_1 {"Весна","Сидоренко П.П.",2024};
+    Note note_2;
+    cout << "Назва :" << " ";
+    getline (cin,note_2.title);
+    cout << "Автор :" << " ";
+    cin >> note_2.author;
+    cout << "Рік публікації :" << " ";
+    cin >> note_2.year; 
+    cin.ignore();
+return 0;
+}
+
+Задача 124
+    /*4. **Дані про автомобіль**: Створіть структуру `Car`, яка включає модель, рік випуску та вартість. Напишіть код,
+    що створює кілька автомобілів та виводить найстаріший автомобіль.*/   
+#include <iostream>
+#include <string>
+using namespace std;
+//4. **Дані про автомобіль**:
+struct Car 
+{
+    string model;                  // модель
+    int year_of_manufacture;       // рік випуску
+    int price;                     // вартість
+};
+int main() 
+{
+ Car ford {"ford", 1967, 50000};
+    Car bmw {"BMW", 2024, 45000};
+    if(ford.year_of_manufacture < bmw.year_of_manufacture)
+    {
+        cout << "Модель: " << ford.model << endl;
+        cout << "Рік випуску: " << ford.year_of_manufacture << endl;
+        cout << "Вартість" << ford.price << "тис. $" << endl;
+    }
+    else
+    {
+        cout << "Модель: " << bmw.model << endl;
+        cout << "Рік випуску: " << bmw.year_of_manufacture << endl;
+        cout << "Вартість: " << bmw.price << "тис. $" << endl;
+    }
+return 0;
+}
+Задача 125
+Напишіть програму, яка зчитуватиме з консолі будь-яке число (від 0 до 99999999) і виводитиме його в такому вигляді (див. малюнок нижче):
+Додатково: зробіть так, щоб "велика цифра" складалася не із зірочок, а з відповідних маленьких (звичайних) цифр.
+  #include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+// Шаблони для великих цифр, що складаються з маленьких цифр
+vector<vector<string>> bigDigits = {
+    {
+        " **** ",
+        "*    *",
+        "*    *",
+        "*    *",
+        "*    *",
+        "*    *",
+        " **** "
+    },
+    {
+        "   * ",
+        "  ** ",
+        " * * ",
+        "   * ",
+        "   * ",
+        "   * ",
+        " *****"
+    },
+    {
+        " **** ",
+        "*    *",
+        "    *",
+        "   * ",
+        "  *  ",
+        " *   ",
+        "******"
+    },
+    {
+        " **** ",
+        "*    *",
+        "    *",
+        "   *",
+        "    *",
+        "*    *",
+        " **** "
+    },
+    {
+        "   ** ",
+        "  * * ",
+        " *  * ",
+        "*   * ",
+        "******",
+        "    * ",
+        "    * "
+    },
+    {
+        "******",
+        "*     ",
+        "**** ",
+        "    *",
+        "     *",
+        "*    *",
+        " **** "
+    },
+    {
+        " **** ",
+        "*    *",
+        "*     ",
+        "***** ",
+        "*    *",
+        "*    *",
+        " **** "
+    },
+    {
+        "******",
+        "     *",
+        "    * ",
+        "   *  ",
+        "  *   ",
+        " *    ",
+        "*     "
+    },
+    {
+        " **** ",
+        "*    *",
+        "*    *",
+        " **** ",
+        "*    *",
+        "*    *",
+        " **** "
+    },
+    {
+        " **** ",
+        "*    *",
+        "*    *",
+        " *****",
+        "     *",
+        "*    *",
+        " **** "
+    }
+};
+vector<vector<string>> bigDigits1 = {
+    {
+        " 0000 ",
+        "0    0",
+        "0    0",
+        "0    0",
+        "0    0",
+        "0    0",
+        " 0000 "
+    },
+    {
+        "   1  ",
+        "  11  ",
+        " 1 1  ",
+        "   1  ",
+        "   1  ",
+        "   1  ",
+        "11111 "
+    },
+    {
+        " 2222 ",
+        "2    2",
+        "    2 ",
+        "   2  ",
+        "  2   ",
+        " 2    ",
+        "222222"
+    },
+    {
+        " 3333 ",
+        "3    3",
+        "    3 ",
+        "   33 ",
+        "    3 ",
+        "3    3",
+        " 3333 "
+    },
+    {
+        "   44 ",
+        "  4 4 ",
+        " 4  4 ",
+        "4   4 ",
+        "444444",
+        "    4 ",
+        "    4 "
+    },
+    {
+        "555555",
+        "5     ",
+        "55555 ",
+        "     5",
+        "     5",
+        "5    5",
+        " 5555 "
+    },
+    {
+        " 6666 ",
+        "6    6",
+        "6     ",
+        "66666 ",
+        "6    6",
+        "6    6",
+        " 6666 "
+    },
+    {
+        "777777",
+        "     7",
+        "    7 ",
+        "   7  ",
+        "  7   ",
+        " 7    ",
+        "7     "
+    },
+    {
+        " 8888 ",
+        "8    8",
+        "8    8",
+        " 8888 ",
+        "8    8",
+        "8    8",
+        " 8888 "
+    },
+    {
+        " 9999 ",
+        "9    9",
+        "9    9",
+        " 99999",
+        "     9",
+        "9    9",
+        " 9999 "
+    }
+};
+// Функція для виведення великої цифри
+void printBigDigit(int digit, int row) {
+    cout << bigDigits[digit][row];// row- номер рядка шаблона цифри,digit- шаблон цифри 
+}
+
+void printBigDigit1(int digit, int row) {
+    cout  <<"    "<<bigDigits1[digit][row]; 
+}
+// Основна функція
+int main() {
+    string number;
+    cout << "Введіть число (від 0 до 99999999): ";
+    cin >> number;
+
+    // Перевірка на коректність вводу
+    for (char ch : number) {
+        if (!isdigit(ch)) {
+            /*isdigit() приймає один аргумент ch, який зазвичай є символом, і 
+            повертає ненульове значення (істину), якщо ch є цифрою (від '0' до '9').
+            Якщо ch не є цифрою, функція повертає 0 (хибу).
+            Параметри:
+            int ch: символ, який потрібно перевірити. В C++ символи представлені типом char,
+            але вони неявно перетворюються на int при передачі у функцію.
+            Повертає:
+            Ненульове значення (істина), якщо ch є цифрою.
+            0 (хибу), якщо ch не є цифрою.
+            Приклад 12а
+            На першій ітерації ch дорівнює '1':
+isdigit('1') повертає true, тому !isdigit('1') повертає false.
+Умова if (!isdigit('1')) є хибною, і програма переходить до наступного символу.
+На другій ітерації ch дорівнює '2':
+
+isdigit('2') повертає true, тому !isdigit('2') повертає false.
+Умова if (!isdigit('2')) є хибною, і програма переходить до наступного символу.
+На третій ітерації ch дорівнює 'a':
+
+isdigit('a') повертає false, тому !isdigit('a') повертає true.
+Умова if (!isdigit('a')) є істинною, і виконується код всередині блоку if.
+Виводиться повідомлення "Введено некоректне число!" і програма завершується з кодом 1.
+
+Підсумок*/
+            cout << "Введено некоректне число!" << endl;
+            return 1;
+        }
+    }
+
+    // Виведення великого числа
+    for (int row = 0; row < 7; ++row) {
+        for (char ch : number) {
+            printBigDigit(ch - '0', row);/*ch - '0' використовується для 
+            
+            перетворення символу цифри на числове значення, яке потім передається
+            функції printBigDigit для отримання відповідного рядка великої цифри.
+            Приклад з '3':
+
+Значення ch — '3'.
+ASCII-код '3' — 51.
+ASCII-код '0' — 48.
+ch - '0' = 51 - 48 = 3.
+*/  printBigDigit1(ch - '0', row);
+            //cout << "       "; // пробіл між цифрами
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
